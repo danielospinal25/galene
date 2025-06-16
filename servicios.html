@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo1.png" alt="GALENE MEDSKIN INSTITUTE" class="logo-img">
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="servicios.html" class="nav-link active">Servicios</a>
+                    <a href="#especialidades" class="nav-link">Especialidades</a>
+                    <a href="#doctor" class="nav-link">Dr. Peñaranda</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="lang-toggle" onclick="toggleLanguage()">
+                        <span id="currentLang">ES</span> | <span id="altLang">EN</span>
+                    </div>
+                    <a href="https://wa.me/573001234567" class="btn-header">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar Cita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="hero-services">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Nuestros</span>
+                    <span class="title-line gradient-text">Servicios</span>
+                </h1>
+                <p class="hero-description">
+                    Tratamientos dermatológicos y estéticos de alta calidad con 
+                    <span class="highlight">tecnología de vanguardia</span> y atención personalizada
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Pacientes Satisfechos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Tratamientos Disponibles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">Categorías de</span>
+                    <span class="gradient-text">Servicios</span>
+                </h2>
+                <p class="section-description">
+                    Ofrecemos una amplia gama de tratamientos especializados para el cuidado integral de tu piel
+                </p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Dermatología Médica -->
+                <div class="category-card medical-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Dermatología Médica</h3>
+                        <p>Diagnóstico y tratamiento de enfermedades de la piel</p>
+                        <div class="header-decoration"></div>
+                    </div>
+                    <div class="category-services">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Consulta Dermatológica General</div>
+                                <div class="service-description">
+                                    Evaluación completa de la salud de tu piel, diagnóstico de patologías y plan de tratamiento personalizado.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-award"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Tratamiento de Acné</div>
+                                <div class="service-description">
+                                    Tratamientos especializados para acné juvenil y adulto, incluyendo terapias tópicas y sistémicas.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Dermatoscopia Digital</div>
+                                <div class="service-description">
+                                    Análisis avanzado de lunares y lesiones cutáneas con tecnología de mapeo corporal.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Tratamiento de Psoriasis</div>
+                                <div class="service-description">
+                                    Manejo integral de psoriasis con tratamientos biológicos y terapias convencionales.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-hand-holding-medical"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Dermatitis y Eccemas</div>
+                                <div class="service-description">
+                                    Diagnóstico y tratamiento de dermatitis atópica, de contacto y otros tipos de eccemas.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dermatología Estética -->
+                <div class="category-card aesthetic-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Dermatología Estética</h3>
+                        <p>Tratamientos para mejorar la apariencia y salud de tu piel</p>
+                        <div class="header-decoration"></div>
+                    </div>
+                    <div class="category-services">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Toxina Botulínica</div>
+                                <div class="service-description">
+                                    Tratamiento de arrugas de expresión en frente, entrecejo y patas de gallo.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-sparkles"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Rellenos con Ácido Hialurónico</div>
+                                <div class="service-description">
+                                    Aumento de volumen y corrección de arrugas con ácido hialurónico de alta calidad.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Peeling Químico</div>
+                                <div class="service-description">
+                                    Renovación cutánea con peelings superficiales, medios y profundos según necesidad.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Microagujas con Radiofrecuencia</div>
+                                <div class="service-description">
+                                    Rejuvenecimiento facial con tecnología de microagujas y radiofrecuencia.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-zap"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Mesoterapia Facial</div>
+                                <div class="service-description">
+                                    Hidratación profunda y revitalización facial con vitaminas y nutrientes.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-water"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tratamientos Corporales -->
+                <div class="category-card body-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Tratamientos Corporales</h3>
+                        <p>Procedimientos para mejorar la apariencia corporal</p>
+                        <div class="header-decoration"></div>
+                    </div>
+                    <div class="category-services">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Criolipólisis</div>
+                                <div class="service-description">
+                                    Eliminación de grasa localizada mediante tecnología de frío controlado.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Radiofrecuencia Corporal</div>
+                                <div class="service-description">
+                                    Reafirmación de la piel y reducción de flacidez en diferentes áreas del cuerpo.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-texture"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Tratamiento de Celulitis</div>
+                                <div class="service-description">
+                                    Protocolo integral para reducir la apariencia de la celulitis y mejorar la textura de la piel.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Escleroterapia</div>
+                                <div class="service-description">
+                                    Tratamiento de várices y arañitas vasculares con técnicas mínimamente invasivas.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-route"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depilación Láser -->
+                <div class="category-card laser-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                        <h3>Depilación Láser</h3>
+                        <p>Eliminación permanente del vello no deseado</p>
+                        <div class="header-decoration"></div>
+                    </div>
+                    <div class="category-services">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Depilación Facial</div>
+                                <div class="service-description">
+                                    Eliminación de vello facial con láser de última generación, seguro para todos los tipos de piel.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Depilación Axilas</div>
+                                <div class="service-description">
+                                    Tratamiento rápido y efectivo para eliminar el vello de las axilas.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Depilación Piernas Completas</div>
+                                <div class="service-description">
+                                    Depilación láser de piernas completas con tecnología avanzada y resultados duraderos.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-name">Depilación Zona Íntima</div>
+                                <div class="service-description">
+                                    Tratamiento delicado y profesional para la zona íntima con máximo confort.
+                                </div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-shield-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>¿Listo para transformar tu piel?</h2>
+                    <p>Agenda tu consulta personalizada y descubre el tratamiento perfecto para ti</p>
+                    <div class="cta-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Consulta Gratuita</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Atención Especializada</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Resultados Garantizados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://wa.me/573001234567" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar Consulta
+                    </a>
+                    <a href="#contacto" class="btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+// Diccionario de traducciones actualizado
+const translations = {
+    es: {
+        // Header
+        'Home': 'Inicio',
+        'Services': 'Servicios',
+        'Specialties': 'Especialidades',
+        'Dr. Peñaranda': 'Dr. Peñaranda',
+        'Contact': 'Contacto',
+        'Book Appointment': 'Agendar Cita',
+        'Inicio': 'Inicio',
+        'Servicios': 'Servicios',
+        'Especialidades': 'Especialidades',
+        'Contacto': 'Contacto',
+        'Agendar Cita': 'Agendar Cita',
+        
+        // Hero Section
+        'Our Services': 'Nuestros Servicios',
+        'Nuestros': 'Nuestros',
+        'Services': 'Servicios',
+        'High-quality dermatological and aesthetic treatments with cutting-edge technology and personalized care': 'Tratamientos dermatológicos y estéticos de alta calidad con tecnología de vanguardia y atención personalizada',
+        'Satisfied Patients': 'Pacientes Satisfechos',
+        'Years of Experience': 'Años de Experiencia',
+        'Available Treatments': 'Tratamientos Disponibles',
+        
+        // Categorías
+        'Service Categories': 'Categorías de Servicios',
+        'We offer a wide range of specialized treatments for comprehensive skin care': 'Ofrecemos una amplia gama de tratamientos especializados para el cuidado integral de tu piel',
+        
+        // CTA Section
+        'Ready to transform your skin?': '¿Listo para transformar tu piel?',
+        'Schedule your personalized consultation and discover the perfect treatment for you': 'Agenda tu consulta personalizada y descubre el tratamiento perfecto para ti',
+        'Free Consultation': 'Consulta Gratuita',
+        'Specialized Care': 'Atención Especializada',
+        'Guaranteed Results': 'Resultados Garantizados',
+        'Schedule Consultation': 'Agendar Consulta',
+        'More Information': 'Más Información'
+    },
+    en: {
+        // Header
+        'Inicio': 'Home',
+        'Servicios': 'Services',
+        'Especialidades': 'Specialties',
+        'Dr. Peñaranda': 'Dr. Peñaranda',
+        'Contacto': 'Contact',
+        'Agendar Cita': 'Book Appointment',
+        
+        // Hero Section
+        'Nuestros': 'Our',
+        'Servicios': 'Services',
+        'Tratamientos dermatológicos y estéticos de alta calidad con tecnología de vanguardia y atención personalizada': 'High-quality dermatological and aesthetic treatments with cutting-edge technology and personalized care',
+        'Pacientes Satisfechos': 'Satisfied Patients',
+        'Años de Experiencia': 'Years of Experience',
+        'Tratamientos Disponibles': 'Available Treatments',
+        
+        // Categorías
+        'Categorías de Servicios': 'Service Categories',
+        'Ofrecemos una amplia gama de tratamientos especializados para el cuidado integral de tu piel': 'We offer a wide range of specialized treatments for comprehensive skin care',
+        
+        // Dermatología Médica
+        'Dermatología Médica': 'Medical Dermatology',
+        'Diagnóstico y tratamiento de enfermedades de la piel': 'Diagnosis and treatment of skin diseases',
+        'Consulta Dermatológica General': 'General Dermatological Consultation',
+        'Evaluación completa de la salud de tu piel, diagnóstico de patologías y plan de tratamiento personalizado.': 'Complete evaluation of your skin health, pathology diagnosis and personalized treatment plan.',
+        'Tratamiento de Acné': 'Acne Treatment',
+        'Tratamientos especializados para acné juvenil y adulto, incluyendo terapias tópicas y sistémicas.': 'Specialized treatments for juvenile and adult acne, including topical and systemic therapies.',
+        'Dermatoscopia Digital': 'Digital Dermatoscopy',
+        'Análisis avanzado de lunares y lesiones cutáneas con tecnología de mapeo corporal.': 'Advanced analysis of moles and skin lesions with body mapping technology.',
+        'Tratamiento de Psoriasis': 'Psoriasis Treatment',
+        'Manejo integral de psoriasis con tratamientos biológicos y terapias convencionales.': 'Comprehensive psoriasis management with biological treatments and conventional therapies.',
+        'Dermatitis y Eccemas': 'Dermatitis and Eczema',
+        'Diagnóstico y tratamiento de dermatitis atópica, de contacto y otros tipos de eccemas.': 'Diagnosis and treatment of atopic dermatitis, contact dermatitis and other types of eczema.',
+        
+        // Dermatología Estética
+        'Dermatología Estética': 'Aesthetic Dermatology',
+        'Tratamientos para mejorar la apariencia y salud de tu piel': 'Treatments to improve the appearance and health of your skin',
+        'Toxina Botulínica': 'Botulinum Toxin',
+        'Tratamiento de arrugas de expresión en frente, entrecejo y patas de gallo.': 'Treatment of expression wrinkles on forehead, between eyebrows and crow\'s feet.',
+        'Rellenos con Ácido Hialurónico': 'Hyaluronic Acid Fillers',
+        'Aumento de volumen y corrección de arrugas con ácido hialurónico de alta calidad.': 'Volume enhancement and wrinkle correction with high-quality hyaluronic acid.',
+        'Peeling Químico': 'Chemical Peel',
+        'Renovación cutánea con peelings superficiales, medios y profundos según necesidad.': 'Skin renewal with superficial, medium and deep peels as needed.',
+        'Microagujas con Radiofrecuencia': 'Microneedling with Radiofrequency',
+        'Rejuvenecimiento facial con tecnología de microagujas y radiofrecuencia.': 'Facial rejuvenation with microneedling and radiofrequency technology.',
+        'Mesoterapia Facial': 'Facial Mesotherapy',
+        'Hidratación profunda y revitalización facial con vitaminas y nutrientes.': 'Deep hydration and facial revitalization with vitamins and nutrients.',
+        
+        // Tratamientos Corporales
+        'Tratamientos Corporales': 'Body Treatments',
+        'Procedimientos para mejorar la apariencia corporal': 'Procedures to improve body appearance',
+        'Criolipólisis': 'Cryolipolysis',
+        'Eliminación de grasa localizada mediante tecnología de frío controlado.': 'Localized fat elimination through controlled cold technology.',
+        'Radiofrecuencia Corporal': 'Body Radiofrequency',
+        'Reafirmación de la piel y reducción de flacidez en diferentes áreas del cuerpo.': 'Skin firming and sagging reduction in different body areas.',
+        'Tratamiento de Celulitis': 'Cellulite Treatment',
+        'Protocolo integral para reducir la apariencia de la celulitis y mejorar la textura de la piel.': 'Comprehensive protocol to reduce cellulite appearance and improve skin texture.',
+        'Escleroterapia': 'Sclerotherapy',
+        'Tratamiento de várices y arañitas vasculares con técnicas mínimamente invasivas.': 'Treatment of varicose veins and spider veins with minimally invasive techniques.',
+        
+        // Depilación Láser
+        'Depilación Láser': 'Laser Hair Removal',
+        'Eliminación permanente del vello no deseado': 'Permanent removal of unwanted hair',
+        'Depilación Facial': 'Facial Hair Removal',
+        'Eliminación de vello facial con láser de última generación, seguro para todos los tipos de piel.': 'Facial hair removal with latest generation laser, safe for all skin types.',
+        'Depilación Axilas': 'Underarm Hair Removal',
+        'Tratamiento rápido y efectivo para eliminar el vello de las axilas.': 'Quick and effective treatment to remove underarm hair.',
+        'Depilación Piernas Completas': 'Full Leg Hair Removal',
+        'Depilación láser de piernas completas con tecnología avanzada y resultados duraderos.': 'Full leg laser hair removal with advanced technology and long-lasting results.',
+        'Depilación Zona Íntima': 'Intimate Area Hair Removal',
+        'Tratamiento delicado y profesional para la zona íntima con máximo confort.': 'Delicate and professional treatment for intimate area with maximum comfort.',
+        
+        // CTA Section
+        '¿Listo para transformar tu piel?': 'Ready to transform your skin?',
+        'Agenda tu consulta personalizada y descubre el tratamiento perfecto para ti': 'Schedule your personalized consultation and discover the perfect treatment for you',
+        'Consulta Gratuita': 'Free Consultation',
+        'Atención Especializada': 'Specialized Care',
+        'Resultados Garantizados': 'Guaranteed Results',
+        'Agendar Consulta': 'Schedule Consultation',
+        'Más Información': 'More Information'
+    }
+};
+
+// Variable para el idioma actual
+let currentLanguage = 'es';
+
+// Función para traducir el contenido
+function translateContent(language) {
+    const elements = document.querySelectorAll('h1, h2, h3, p, .nav-link, .btn-header, .service-name, .service-description, .breadcrumb-link, .title-line, .hero-description, .stat-label, .section-title, .section-description, .btn-primary, .btn-secondary, .cta-text h2, .cta-text p, .feature span');
+    
+    elements.forEach(element => {
+        const originalText = element.textContent.trim();
+        
+        if (translations[language] && translations[language][originalText]) {
+            element.textContent = translations[language][originalText];
+        }
+    });
+    
+    // Actualizar el título de la página
+    if (language === 'en') {
+        document.title = 'Services - GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda';
+    } else {
+        document.title = 'Servicios - GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda';
+    }
+}
+
+// Función para alternar idioma
+function toggleLanguage() {
+    // Cambiar al idioma opuesto
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+    
+    // Actualizar los indicadores de idioma
+    const currentLangElement = document.getElementById('currentLang');
+    const altLangElement = document.getElementById('altLang');
+    
+    if (currentLanguage === 'en') {
+        currentLangElement.textContent = 'EN';
+        altLangElement.textContent = 'ES';
+    } else {
+        currentLangElement.textContent = 'ES';
+        altLangElement.textContent = 'EN';
+    }
+    
+    // Traducir el contenido
+    translateContent(currentLanguage);
+    
+    // Guardar preferencia en localStorage
+    localStorage.setItem('preferredLanguage', currentLanguage);
+}
+
+// Función para detectar el idioma del navegador
+function detectBrowserLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage;
+    return browserLang.startsWith('en') ? 'en' : 'es';
+}
+
+// Inicializar cuando se carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    // Cargar idioma guardado o detectar idioma del navegador
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    currentLanguage = savedLanguage || detectBrowserLanguage();
+    
+    // Actualizar los indicadores de idioma
+    const currentLangElement = document.getElementById('currentLang');
+    const altLangElement = document.getElementById('altLang');
+    
+    if (currentLanguage === 'en') {
+        currentLangElement.textContent = 'EN';
+        altLangElement.textContent = 'ES';
+        translateContent('en');
+    } else {
+        currentLangElement.textContent = 'ES';
+        altLangElement.textContent = 'EN';
+        // No es necesario traducir si ya está en español por defecto
+    }
+});
+    </script>
+</body>
+</html>

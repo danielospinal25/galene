@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+  
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+    <img src="img/logo1.png" alt="GALENE MEDSKIN INSTITUTE" class="logo-img">
+    
+</div>
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="#especialidades" class="nav-link">Especialidades</a>
+                <a href="#doctor" class="nav-link">Dr. Peñaranda</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-toggle" onclick="toggleLanguage()">
+    <span id="currentLang">ES</span> | <span id="altLang">EN</span>
+</div>
+                <a href="https://wa.me/573001234567" class="btn-header">Agendar Cita</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+ <!-- banner -->
+
+<section class="banner">
+    <div class="banner-content">
+        <img src="img/banner.png" alt="GALENE MEDSKIN INSTITUTE" class="banner-image">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="banner-text">
+                    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE" class="banner-logo">
+                    <p>Excelencia en dermatología y medicina estética</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- whatsapp -->
+
+   <div class="whatsapp-float" onclick="toggleWhatsAppModal()">
+    <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+  </div>
+  <div class="whatsapp-modal" id="whatsappModal">
+    <div class="modal-header">
+        <div class="modal-avatar">👨‍⚕️</div>
+        <div class="modal-header-text">
+            <h4 id="modalTitle">Dr. Camilo Peñaranda</h4>
+            <p id="modalStatus">En línea</p>
+        </div>
+        <button class="modal-close" onclick="closeWhatsAppModal()">×</button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-message" id="modalMessage">
+            ¡Hola! 👋 Soy el Dr. Camilo Peñaranda. ¿En qué puedo ayudarte hoy? Puedes escribirme directamente por WhatsApp.
+        </div>
+        <div class="modal-actions">
+            <a href="https://wa.me/573001234567?text=Hola%20Dr.%20Peñaranda,%20me%20gustar%C3%ADa%20agendar%20una%20cita" 
+               class="modal-btn modal-btn-primary" 
+               target="_blank" 
+               onclick="closeWhatsAppModal()" 
+               id="whatsappBtn">
+                📱 <span id="whatsappBtnText">Escribir por WhatsApp</span>
+            </a>
+            <button class="modal-btn modal-btn-secondary" onclick="closeWhatsAppModal()" id="cancelBtn">
+                Cancelar
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- hero -->
+        
+   <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Atención dermatológica de alta precisión y calidez humana</h1>
+            <h2>Clínica del Dr. Camilo Peñaranda. Estamos aquí para ti mientras preparamos nuestra nueva experiencia digital</h2>
+            <div class="hero-buttons">
+                <a href="https://wa.me/573001234567" class="btn btn-primary">Contactar por WhatsApp</a>
+                <a href="#contact" class="btn btn-secondary">Dejar tus datos</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- servicios -->
+
+    <section class="services">
+        <div class="container">
+            <h2>¿Cómo podemos ayudarte hoy?</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="window.open('https://wa.me/573001234567', '_blank')">
+                    <span class="service-icon">💬</span>
+                    <h3>Consulta médica o estética</h3>
+                    <p>Agenda tu cita personalizada con el Dr. Camilo Peñaranda para una evaluación completa y profesional.</p>
+                </div>
+                <div class="service-card" onclick="document.getElementById('pqrs-form').scrollIntoView()">
+                    <span class="service-icon">📝</span>
+                    <h3>Reportar experiencia (PQRS)</h3>
+                    <p>Comparte tu experiencia con nosotros. Tu opinión es fundamental para mejorar continuamente.</p>
+                </div>
+                <div class="service-card" onclick="window.open('https://wa.me/573001234567', '_blank')">
+                    <span class="service-icon">📅</span>
+                    <h3>Agendar una cita</h3>
+                    <p>Solicita tu cita de forma rápida y segura a través de nuestros canales oficiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contacto -->
+
+   <section class="contact-form" id="contacto">
+    <div class="container">
+        <div class="form-header">
+            <span class="form-badge">💬 Contáctanos</span>
+            <h2>Déjanos tus datos y te contactamos</h2>
+            <p class="form-subtitle">Nuestro equipo se pondrá en contacto contigo en las próximas 24 horas para coordinar tu cita personalizada.</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-left">
+                <div class="form-info">
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h4>WhatsApp directo</h4>
+                            <p>+57 300 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@galenemedskin.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Ubicación</h4>
+                            <p>Neiva, Huila<br>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h4>Horarios de atención</h4>
+                            <p>Lun - Vie: 8:00 AM - 6:00 PM<br>Sáb: 8:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-right">
+                <form id="contactForm" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="name" name="name" required placeholder="Ej: María García">
+                                <span class="input-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <div class="input-wrapper">
+                                <input type="tel" id="phone" name="phone" required placeholder="(+57) 300 123 4567">
+                                <span class="input-line"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (opcional)</label>
+                            <div class="input-wrapper">
+                                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+                                <span class="input-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reason">Motivo de contacto</label>
+                            <div class="select-wrapper">
+                                <select id="reason" name="reason" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="consulta">Consulta dermatológica</option>
+                                    <option value="estetica">Tratamiento estético</option>
+                                    <option value="seguimiento">Seguimiento de tratamiento</option>
+                                    <option value="informacion">Información general</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <span class="select-arrow">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="comments">Comentarios adicionales</label>
+                            <div class="textarea-wrapper">
+                                <textarea id="comments" name="comments" placeholder="Cuéntanos más detalles sobre tu consulta o tratamiento de interés..."></textarea>
+                                <span class="textarea-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Enviar solicitud</span>
+                            <span class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 11L11 13"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <p class="form-note">
+                            <span class="note-icon">🔒</span>
+                            Tus datos están protegidos y solo se usarán para contactarte.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- testimonio -->
+   
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <h2>Lo que dicen nuestros pacientes</h2>
+            <p>Testimonios reales de personas que han confiado en nuestra atención</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        El Dr. Peñaranda fue muy profesional y detallado en mi consulta. Me explicó todo claramente y el tratamiento para mi acné ha dado excelentes resultados. Totalmente recomendado.
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>M</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>María González</h4>
+                        <p>Paciente desde 2023</p>
+                        <div class="rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Excelente atención desde el primer contacto. El consultorio es muy limpio y moderno. Me hice un tratamiento facial y los resultados superaron mis expectativas.
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>C</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Carlos Ramírez</h4>
+                        <p>Tratamiento estético</p>
+                        <div class="rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Llegué muy preocupada por una mancha en la piel, pero el Dr. Peñaranda me tranquilizó y me dio el tratamiento perfecto. Su calidez humana marca la diferencia.
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>L</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Lucía Torres</h4>
+                        <p>Consulta dermatológica</p>
+                        <div class="rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-stats">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Pacientes satisfechos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfacción</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5⭐</div>
+                <div class="stat-label">Calificación promedio</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- PQRS Section -->
+<section class="pqrs" id="pqrs-form">
+    <div class="container">
+        <h2>¿Deseas compartir tu experiencia?</h2>
+        <p>Tu opinión nos ayuda a mejorar.</p>
+        <a href="#" class="btn btn-secondary" onclick="openPQRSModal()">Ir al formulario de satisfacción / PQRS</a>
+    </div>
+</section>
+
+<!-- formulario de encuesta -->
+
+<div class="pqrs-modal" id="pqrsModal">
+    <div class="modal-overlay" onclick="closePQRSModal()"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Formulario de Experiencia (PQRS)</h3>
+            <button class="modal-close-btn" onclick="closePQRSModal()">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <form id="pqrsForm" class="pqrs-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pqrs-name">Nombre completo *</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="pqrs-name" name="name" required placeholder="Tu nombre completo">
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pqrs-email">Email *</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="pqrs-email" name="email" required placeholder="tu@email.com">
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pqrs-phone">Teléfono</label>
+                        <div class="input-wrapper">
+                            <input type="tel" id="pqrs-phone" name="phone" placeholder="(+57) 300 123 4567">
+                            <span class="input-line"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pqrs-type">Tipo de solicitud *</label>
+                        <div class="select-wrapper">
+                            <select id="pqrs-type" name="type" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="peticion">Petición</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="felicitacion">Felicitación</option>
+                            </select>
+                            <span class="select-arrow">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pqrs-rating">Calificación general</label>
+                        <div class="rating-wrapper">
+                            <div class="star-rating" id="starRating">
+                                <span class="star" data-rating="1">⭐</span>
+                                <span class="star" data-rating="2">⭐</span>
+                                <span class="star" data-rating="3">⭐</span>
+                                <span class="star" data-rating="4">⭐</span>
+                                <span class="star" data-rating="5">⭐</span>
+                            </div>
+                            <input type="hidden" id="pqrs-rating" name="rating" value="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pqrs-message">Describe tu experiencia *</label>
+                        <div class="textarea-wrapper">
+                            <textarea id="pqrs-message" name="message" required placeholder="Cuéntanos en detalle tu experiencia, sugerencia o comentario. Mientras más específico seas, mejor podremos ayudarte." rows="5"></textarea>
+                            <span class="textarea-line"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button type="button" class="btn-modal btn-cancel" onclick="closePQRSModal()">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="btn-modal btn-submit">
+                        <span class="btn-text">Enviar PQRS</span>
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 11L11 13"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Dirección: [Dirección de la clínica]</p>
+                    <p>📱 WhatsApp: +57 300 123 4567</p>
+                    <p>📧 Email: info@galenemedskin.com</p>
+                </div>
+               <div class="footer-section">
+    <h3>Síguenos</h3>
+    <div class="social-links">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="img/youtube.png" alt="YouTube" class="social-icon"></a>
+        <a href="#"><img src="img/x.png" alt="X (Twitter)" class="social-icon"></a>
+    </div>
+</div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Aviso Legal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="footer-logo" style="margin-bottom: 20px; text-align: center;">
+    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE" style="height: 60px; width: auto;">
+</div>
+                <p>&copy; 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+// Form submission handler
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+    
+    // Simulate form submission
+    alert('¡Gracias por contactarnos! Te estaremos contactando pronto.');
+    
+    // Reset form
+    this.reset();
+    
+    // In a real implementation, you would send this data to your backend
+    console.log('Form data:', data);
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Header background on scroll
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+    } else {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+    }
+});
+// PQRS Modal Functions
+function openPQRSModal() {
+    const modal = document.getElementById('pqrsModal');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePQRSModal() {
+    const modal = document.getElementById('pqrsModal');
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+    
+    // Reset form
+    const form = document.getElementById('pqrsForm');
+    form.reset();
+    resetStarRating();
+}
+
+// Star Rating Functionality
+function initializeStarRating() {
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('pqrs-rating');
+    
+    stars.forEach((star, index) => {
+        star.addEventListener('click', function() {
+            const rating = parseInt(this.dataset.rating);
+            ratingInput.value = rating;
+            updateStarDisplay(rating);
+        });
+        
+        star.addEventListener('mouseenter', function() {
+            const rating = parseInt(this.dataset.rating);
+            highlightStars(rating);
+        });
+    });
+    
+    const starContainer = document.getElementById('starRating');
+    starContainer.addEventListener('mouseleave', function() {
+        const currentRating = parseInt(ratingInput.value) || 0;
+        updateStarDisplay(currentRating);
+    });
+}
+
+function highlightStars(rating) {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach((star, index) => {
+        star.classList.remove('active', 'hover');
+        if (index < rating) {
+            star.classList.add('hover');
+        }
+    });
+}
+
+function updateStarDisplay(rating) {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach((star, index) => {
+        star.classList.remove('active', 'hover');
+        if (index < rating) {
+            star.classList.add('active');
+        }
+    });
+}
+
+function resetStarRating() {
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('pqrs-rating');
+    
+    stars.forEach(star => {
+        star.classList.remove('active', 'hover');
+    });
+    ratingInput.value = '';
+}
+
+// PQRS Form Submission
+document.addEventListener('DOMContentLoaded', function() {
+    initializeStarRating();
+    
+    const pqrsForm = document.getElementById('pqrsForm');
+    if (pqrsForm) {
+        pqrsForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Add rating if selected
+            const rating = document.getElementById('pqrs-rating').value;
+            if (rating) {
+                data.rating = rating;
+            }
+            
+            // Show success message
+            alert('¡Gracias por tu PQRS! Hemos recibido tu mensaje y te contactaremos pronto.');
+            
+            // Close modal and reset form
+            closePQRSModal();
+            
+            // In a real implementation, send data to backend
+            console.log('PQRS Data:', data);
+        });
+    }
+});
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('pqrsModal');
+    const modalContent = document.querySelector('.modal-content');
+    
+    if (modal && modal.classList.contains('show') && !modalContent.contains(e.target)) {
+        // Only close if clicking on the overlay, not the content
+        if (e.target.classList.contains('modal-overlay')) {
+            closePQRSModal();
+        }
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('pqrsModal');
+        if (modal && modal.classList.contains('show')) {
+            closePQRSModal();
+        }
+    }
+});
+
+const translations = {
+    es: {
+        // Header
+        inicio: "Inicio",
+        servicios: "Servicios",
+        especialidades: "Especialidades",
+        doctor: "Dr. Peñaranda",
+        contacto: "Contacto",
+        agendarCita: "Agendar Cita",
+        
+        // Hero
+        heroTitle: "Atención dermatológica de alta precisión y calidez humana",
+        heroSubtitle: "Clínica del Dr. Camilo Peñaranda. Estamos aquí para ti mientras preparamos nuestra nueva experiencia digital",
+        contactWhatsApp: "Contactar por WhatsApp",
+        dejarDatos: "Dejar tus datos",
+        
+        // Services
+        servicesTitle: "¿Cómo podemos ayudarte hoy?",
+        consultaTitle: "Consulta médica o estética",
+        consultaDesc: "Agenda tu cita personalizada con el Dr. Camilo Peñaranda para una evaluación completa y profesional.",
+        pqrsTitle: "Reportar experiencia (PQRS)",
+        pqrsDesc: "Comparte tu experiencia con nosotros. Tu opinión es fundamental para mejorar continuamente.",
+        citaTitle: "Agendar una cita",
+        citaDesc: "Solicita tu cita de forma rápida y segura a través de nuestros canales oficiales.",
+        
+        // Contact Form
+        contactanos: "Contáctanos",
+        formTitle: "Déjanos tus datos y te contactamos",
+        formSubtitle: "Nuestro equipo se pondrá en contacto contigo en las próximas 24 horas para coordinar tu cita personalizada.",
+        whatsappDirecto: "WhatsApp directo",
+        email: "Email",
+        ubicacion: "Ubicación",
+        ubicacionText: "Neiva, Huila<br>Colombia",
+        horariosAtencion: "Horarios de atención",
+        horariosText: "Lun - Vie: 8:00 AM - 6:00 PM<br>Sáb: 8:00 AM - 2:00 PM",
+        
+        // Form Fields
+        nombreCompleto: "Nombre completo",
+        nombrePlaceholder: "Ej: María García",
+        telefono: "Teléfono",
+        telefonoPlaceholder: "(+57) 300 123 4567",
+        emailOpcional: "Email (opcional)",
+        emailPlaceholder: "correo@ejemplo.com",
+        motivoContacto: "Motivo de contacto",
+        seleccionaOpcion: "Selecciona una opción",
+        consultaDermo: "Consulta dermatológica",
+        tratamientoEstetico: "Tratamiento estético",
+        seguimientoTratamiento: "Seguimiento de tratamiento",
+        informacionGeneral: "Información general",
+        otro: "Otro",
+        comentariosAdicionales: "Comentarios adicionales",
+        comentariosPlaceholder: "Cuéntanos más detalles sobre tu consulta o tratamiento de interés...",
+        enviarSolicitud: "Enviar solicitud",
+        datosProtegidos: "Tus datos están protegidos y solo se usarán para contactarte.",
+        
+        // WhatsApp Modal
+        modalTitle: "Dr. Camilo Peñaranda",
+        modalStatus: "En línea",
+        modalMessage: "¡Hola! 👋 Soy el Dr. Camilo Peñaranda. ¿En qué puedo ayudarte hoy? Puedes escribirme directamente por WhatsApp.",
+        whatsappBtnText: "Escribir por WhatsApp",
+        cancelBtn: "Cancelar",
+        
+        // Testimonials Section
+        testimonialsTitle: "Lo que dicen nuestros pacientes",
+        testimonialsSubtitle: "Testimonios reales de personas que han confiado en nuestra atención",
+        
+        // Testimonial 1
+        testimonial1Text: "El Dr. Peñaranda fue muy profesional y detallado en mi consulta. Me explicó todo claramente y el tratamiento para mi acné ha dado excelentes resultados. Totalmente recomendado.",
+        testimonial1Author: "María González",
+        testimonial1Role: "Paciente desde 2023",
+        
+        // Testimonial 2
+        testimonial2Text: "Excelente atención desde el primer contacto. El consultorio es muy limpio y moderno. Me hice un tratamiento facial y los resultados superaron mis expectativas.",
+        testimonial2Author: "Carlos Ramírez",
+        testimonial2Role: "Tratamiento estético",
+        
+        // Testimonial 3
+        testimonial3Text: "Llegué muy preocupada por una mancha en la piel, pero el Dr. Peñaranda me tranquilizó y me dio el tratamiento perfecto. Su calidez humana marca la diferencia.",
+        testimonial3Author: "Lucía Torres",
+        testimonial3Role: "Consulta dermatológica",
+        
+        // Stats
+        stat1Number: "500+",
+        stat1Label: "Pacientes satisfechos",
+        stat2Number: "98%",
+        stat2Label: "Satisfacción",
+        stat3Number: "5⭐",
+        stat3Label: "Calificación promedio",
+        
+        // Testimonial simple (mantener para compatibilidad)
+        testimonialQuote: "La atención fue impecable, desde el primer contacto sentí profesionalismo y empatía.",
+        testimonialAuthor: "— Paciente real, GALENE",
+        
+        // PQRS Section  
+        pqrsSectionTitle: "¿Deseas compartir tu experiencia?",
+        pqrsSubtitle: "Tu opinión nos ayuda a mejorar.",
+        pqrsButton: "Ir al formulario de satisfacción / PQRS",
+        pqrsAlert: "Formulario PQRS - Próximamente disponible",
+        
+        // Footer
+        footerContacto: "Contacto",
+        footerDireccion: "📍 Dirección: [Dirección de la clínica]",
+        footerWhatsApp: "📱 WhatsApp: +57 300 123 4567",
+        footerEmail: "📧 Email: info@galenemedskin.com",
+        footerSiguenos: "Síguenos",
+        footerLegal: "Legal",
+        footerPoliticaPrivacidad: "Política de Privacidad",
+        footerTerminos: "Términos y Condiciones",
+        footerAvisoLegal: "Aviso Legal",
+        footerCopyright: "© 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.",
+        
+        // Form submission messages
+        formSuccessMessage: "¡Gracias por contactarnos! Te estaremos contactando pronto."
+
+        
+    },
+    en: {
+        // Header
+        inicio: "Home",
+        servicios: "Services",
+        especialidades: "Specialties",
+        doctor: "Dr. Peñaranda",
+        contacto: "Contact",
+        agendarCita: "Book Appointment",
+        
+        // Hero
+        heroTitle: "High precision dermatological care with human warmth",
+        heroSubtitle: "Dr. Camilo Peñaranda's Clinic. We are here for you while we prepare our new digital experience",
+        contactWhatsApp: "Contact via WhatsApp",
+        dejarDatos: "Leave your details",
+        
+        // Services
+        servicesTitle: "How can we help you today?",
+        consultaTitle: "Medical or aesthetic consultation",
+        consultaDesc: "Schedule your personalized appointment with Dr. Camilo Peñaranda for a complete and professional evaluation.",
+        pqrsTitle: "Report experience (PQRS)",
+        pqrsDesc: "Share your experience with us. Your opinion is fundamental to continuously improve.",
+        citaTitle: "Schedule an appointment",
+        citaDesc: "Request your appointment quickly and safely through our official channels.",
+        
+        // Contact Form
+        contactanos: "Contact us",
+        formTitle: "Leave your details and we'll contact you",
+        formSubtitle: "Our team will contact you within the next 24 hours to coordinate your personalized appointment.",
+        whatsappDirecto: "Direct WhatsApp",
+        email: "Email",
+        ubicacion: "Location",
+        ubicacionText: "Neiva, Huila<br>Colombia",
+        horariosAtencion: "Office hours",
+        horariosText: "Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 8:00 AM - 2:00 PM",
+        
+        // Form Fields
+        nombreCompleto: "Full name",
+        nombrePlaceholder: "Ex: Maria Garcia",
+        telefono: "Phone",
+        telefonoPlaceholder: "(+57) 300 123 4567",
+        emailOpcional: "Email (optional)",
+        emailPlaceholder: "email@example.com",
+        motivoContacto: "Reason for contact",
+        seleccionaOpcion: "Select an option",
+        consultaDermo: "Dermatological consultation",
+        tratamientoEstetico: "Aesthetic treatment",
+        seguimientoTratamiento: "Treatment follow-up",
+        informacionGeneral: "General information",
+        otro: "Other",
+        comentariosAdicionales: "Additional comments",
+        comentariosPlaceholder: "Tell us more details about your consultation or treatment of interest...",
+        enviarSolicitud: "Send request",
+        datosProtegidos: "Your data is protected and will only be used to contact you.",
+        
+        // WhatsApp Modal
+        modalTitle: "Dr. Camilo Peñaranda",
+        modalStatus: "Online",
+        modalMessage: "Hello! 👋 I'm Dr. Camilo Peñaranda. How can I help you today? You can write to me directly on WhatsApp.",
+        whatsappBtnText: "Write on WhatsApp",
+        cancelBtn: "Cancel",
+        
+        // Testimonials Section
+        testimonialsTitle: "What our patients say",
+        testimonialsSubtitle: "Real testimonials from people who have trusted our care",
+        
+        // Testimonial 1
+        testimonial1Text: "Dr. Peñaranda was very professional and detailed in my consultation. He explained everything clearly and the acne treatment has given excellent results. Totally recommended.",
+        testimonial1Author: "María González",
+        testimonial1Role: "Patient since 2023",
+        
+        // Testimonial 2
+        testimonial2Text: "Excellent attention from the first contact. The office is very clean and modern. I had a facial treatment and the results exceeded my expectations.",
+        testimonial2Author: "Carlos Ramírez",
+        testimonial2Role: "Aesthetic treatment",
+        
+        // Testimonial 3
+        testimonial3Text: "I arrived very worried about a skin spot, but Dr. Peñaranda reassured me and gave me the perfect treatment. His human warmth makes the difference.",
+        testimonial3Author: "Lucía Torres",
+        testimonial3Role: "Dermatological consultation",
+        
+        // Stats
+        stat1Number: "500+",
+        stat1Label: "Satisfied patients",
+        stat2Number: "98%",
+        stat2Label: "Satisfaction",
+        stat3Number: "5⭐",
+        stat3Label: "Average rating",
+        
+        // Testimonial simple (mantener para compatibilidad)
+        testimonialQuote: "The care was impeccable, from the first contact I felt professionalism and empathy.",
+        testimonialAuthor: "— Real patient, GALENE",
+        
+        // PQRS Section
+        pqrsSectionTitle: "Would you like to share your experience?",
+        pqrsSubtitle: "Your opinion helps us improve.",
+        pqrsButton: "Go to satisfaction / PQRS form",
+        pqrsAlert: "PQRS Form - Coming soon",
+        
+        // Footer
+        footerContacto: "Contact",
+        footerDireccion: "📍 Address: [Clinic address]",
+        footerWhatsApp: "📱 WhatsApp: +57 300 123 4567",
+        footerEmail: "📧 Email: info@galenemedskin.com",
+        footerSiguenos: "Follow us",
+        footerLegal: "Legal",
+        footerPoliticaPrivacidad: "Privacy Policy",
+        footerTerminos: "Terms and Conditions",
+        footerAvisoLegal: "Legal Notice",
+        footerCopyright: "© 2025 GALENE MEDSKIN INSTITUTE. All rights reserved.",
+        
+        // Form submission messages
+        formSuccessMessage: "Thank you for contacting us! We will be contacting you soon."
+    }
+};
+
+let currentLanguage = 'es';
+
+// WhatsApp Modal Functions
+function toggleWhatsAppModal() {
+    const modal = document.getElementById('whatsappModal');
+    if (modal.classList.contains('show')) {
+        closeWhatsAppModal();
+    } else {
+        modal.classList.add('show');
+    }
+}
+
+function closeWhatsAppModal() {
+    const modal = document.getElementById('whatsappModal');
+    modal.classList.remove('show');
+}
+
+// Language Toggle Function
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+    updateLanguage();
+}
+
+function updateLanguage() {
+    const t = translations[currentLanguage];
+    
+    // Update navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    if (navLinks.length >= 5) {
+        navLinks[0].textContent = t.inicio;
+        navLinks[1].textContent = t.servicios;
+        navLinks[2].textContent = t.especialidades;
+        navLinks[3].textContent = t.doctor;
+        navLinks[4].textContent = t.contacto;
+    }
+    
+    // Update header button
+    const headerBtn = document.querySelector('.btn-header');
+    if (headerBtn) headerBtn.textContent = t.agendarCita;
+    
+    // Update hero section
+    const heroH1 = document.querySelector('.hero h1');
+    const heroH2 = document.querySelector('.hero h2');
+    if (heroH1) heroH1.textContent = t.heroTitle;
+    if (heroH2) heroH2.textContent = t.heroSubtitle;
+    
+    const heroBtns = document.querySelectorAll('.hero-buttons .btn');
+    if (heroBtns.length >= 2) {
+        heroBtns[0].textContent = t.contactWhatsApp;
+        heroBtns[1].textContent = t.dejarDatos;
+    }
+    
+    // Update services section
+    const servicesH2 = document.querySelector('.services h2');
+    if (servicesH2) servicesH2.textContent = t.servicesTitle;
+    
+    const serviceCards = document.querySelectorAll('.service-card');
+    if (serviceCards.length >= 3) {
+        const card1H3 = serviceCards[0].querySelector('h3');
+        const card1P = serviceCards[0].querySelector('p');
+        if (card1H3) card1H3.textContent = t.consultaTitle;
+        if (card1P) card1P.textContent = t.consultaDesc;
+        
+        const card2H3 = serviceCards[1].querySelector('h3');
+        const card2P = serviceCards[1].querySelector('p');
+        if (card2H3) card2H3.textContent = t.pqrsTitle;
+        if (card2P) card2P.textContent = t.pqrsDesc;
+        
+        const card3H3 = serviceCards[2].querySelector('h3');
+        const card3P = serviceCards[2].querySelector('p');
+        if (card3H3) card3H3.textContent = t.citaTitle;
+        if (card3P) card3P.textContent = t.citaDesc;
+    }
+    
+    // Update contact form section
+    const formBadge = document.querySelector('.form-badge');
+    if (formBadge) formBadge.innerHTML = `💬 ${t.contactanos}`;
+    
+    const formH2 = document.querySelector('.form-header h2');
+    if (formH2) formH2.textContent = t.formTitle;
+    
+    const formSubtitle = document.querySelector('.form-subtitle');
+    if (formSubtitle) formSubtitle.textContent = t.formSubtitle;
+    
+    // Update contact info
+    const infoItems = document.querySelectorAll('.info-item');
+    if (infoItems.length >= 4) {
+        const whatsappH4 = infoItems[0].querySelector('h4');
+        if (whatsappH4) whatsappH4.textContent = t.whatsappDirecto;
+        
+        const emailH4 = infoItems[1].querySelector('h4');
+        if (emailH4) emailH4.textContent = t.email;
+        
+        const ubicacionH4 = infoItems[2].querySelector('h4');
+        const ubicacionP = infoItems[2].querySelector('p');
+        if (ubicacionH4) ubicacionH4.textContent = t.ubicacion;
+        if (ubicacionP) ubicacionP.innerHTML = t.ubicacionText;
+        
+        const horariosH4 = infoItems[3].querySelector('h4');
+        const horariosP = infoItems[3].querySelector('p');
+        if (horariosH4) horariosH4.textContent = t.horariosAtencion;
+        if (horariosP) horariosP.innerHTML = t.horariosText;
+    }
+    
+    // Update form fields
+    const nameLabel = document.querySelector('label[for="name"]');
+    if (nameLabel) nameLabel.textContent = t.nombreCompleto;
+    const nameInput = document.getElementById('name');
+    if (nameInput) nameInput.placeholder = t.nombrePlaceholder;
+    
+    const phoneLabel = document.querySelector('label[for="phone"]');
+    if (phoneLabel) phoneLabel.textContent = t.telefono;
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) phoneInput.placeholder = t.telefonoPlaceholder;
+    
+    const emailLabel = document.querySelector('label[for="email"]');
+    if (emailLabel) emailLabel.textContent = t.emailOpcional;
+    const emailInput = document.getElementById('email');
+    if (emailInput) emailInput.placeholder = t.emailPlaceholder;
+    
+    const reasonLabel = document.querySelector('label[for="reason"]');
+    if (reasonLabel) reasonLabel.textContent = t.motivoContacto;
+    
+    // Update select options
+    const reasonSelect = document.getElementById('reason');
+    if (reasonSelect) {
+        const options = reasonSelect.querySelectorAll('option');
+        if (options.length >= 6) {
+            options[0].textContent = t.seleccionaOpcion;
+            options[1].textContent = t.consultaDermo;
+            options[2].textContent = t.tratamientoEstetico;
+            options[3].textContent = t.seguimientoTratamiento;
+            options[4].textContent = t.informacionGeneral;
+            options[5].textContent = t.otro;
+        }
+    }
+    
+    const commentsLabel = document.querySelector('label[for="comments"]');
+    if (commentsLabel) commentsLabel.textContent = t.comentariosAdicionales;
+    const commentsTextarea = document.getElementById('comments');
+    if (commentsTextarea) commentsTextarea.placeholder = t.comentariosPlaceholder;
+    
+    const submitBtn = document.querySelector('.btn-submit .btn-text');
+    if (submitBtn) submitBtn.textContent = t.enviarSolicitud;
+    
+    const formNote = document.querySelector('.form-note');
+    if (formNote) formNote.innerHTML = `<span class="note-icon">🔒</span> ${t.datosProtegidos}`;
+    
+    // Update WhatsApp modal
+    const modalTitle = document.getElementById('modalTitle');
+    if (modalTitle) modalTitle.textContent = t.modalTitle;
+    
+    const modalStatus = document.getElementById('modalStatus');
+    if (modalStatus) modalStatus.textContent = t.modalStatus;
+    
+    const modalMessage = document.getElementById('modalMessage');
+    if (modalMessage) modalMessage.textContent = t.modalMessage;
+    
+    const whatsappBtnText = document.getElementById('whatsappBtnText');
+    if (whatsappBtnText) whatsappBtnText.textContent = t.whatsappBtnText;
+    
+    const cancelBtnModal = document.getElementById('cancelBtn');
+    if (cancelBtnModal) cancelBtnModal.textContent = t.cancelBtn;
+    
+    // Update testimonials section - NUEVA SECCIÓN ACTUALIZADA
+    const testimonialsHeader = document.querySelector('.testimonials-header h2');
+    if (testimonialsHeader) testimonialsHeader.textContent = t.testimonialsTitle;
+    
+    const testimonialsSubtitle = document.querySelector('.testimonials-header p');
+    if (testimonialsSubtitle) testimonialsSubtitle.textContent = t.testimonialsSubtitle;
+    
+    // Update individual testimonials
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    if (testimonialCards.length >= 3) {
+        // Testimonial 1
+        const testimonial1Text = testimonialCards[0].querySelector('.testimonial-text');
+        const testimonial1Name = testimonialCards[0].querySelector('.author-info h4');
+        const testimonial1Role = testimonialCards[0].querySelector('.author-info p');
+        if (testimonial1Text) testimonial1Text.textContent = t.testimonial1Text;
+        if (testimonial1Name) testimonial1Name.textContent = t.testimonial1Author;
+        if (testimonial1Role) testimonial1Role.textContent = t.testimonial1Role;
+        
+        // Testimonial 2
+        const testimonial2Text = testimonialCards[1].querySelector('.testimonial-text');
+        const testimonial2Name = testimonialCards[1].querySelector('.author-info h4');
+        const testimonial2Role = testimonialCards[1].querySelector('.author-info p');
+        if (testimonial2Text) testimonial2Text.textContent = t.testimonial2Text;
+        if (testimonial2Name) testimonial2Name.textContent = t.testimonial2Author;
+        if (testimonial2Role) testimonial2Role.textContent = t.testimonial2Role;
+        
+        // Testimonial 3
+        const testimonial3Text = testimonialCards[2].querySelector('.testimonial-text');
+        const testimonial3Name = testimonialCards[2].querySelector('.author-info h4');
+        const testimonial3Role = testimonialCards[2].querySelector('.author-info p');
+        if (testimonial3Text) testimonial3Text.textContent = t.testimonial3Text;
+        if (testimonial3Name) testimonial3Name.textContent = t.testimonial3Author;
+        if (testimonial3Role) testimonial3Role.textContent = t.testimonial3Role;
+    }
+    
+    // Update stats section
+    const statItems = document.querySelectorAll('.stat-item');
+    if (statItems.length >= 3) {
+        const stat1Number = statItems[0].querySelector('.stat-number');
+        const stat1Label = statItems[0].querySelector('.stat-label');
+        if (stat1Number) stat1Number.textContent = t.stat1Number;
+        if (stat1Label) stat1Label.textContent = t.stat1Label;
+        
+        const stat2Number = statItems[1].querySelector('.stat-number');
+        const stat2Label = statItems[1].querySelector('.stat-label');
+        if (stat2Number) stat2Number.textContent = t.stat2Number;
+        if (stat2Label) stat2Label.textContent = t.stat2Label;
+        
+        const stat3Number = statItems[2].querySelector('.stat-number');
+        const stat3Label = statItems[2].querySelector('.stat-label');
+        if (stat3Number) stat3Number.textContent = t.stat3Number;
+        if (stat3Label) stat3Label.textContent = t.stat3Label;
+    }
+    
+    // Update simple testimonial (for compatibility with older versions)
+    const testimonialQuote = document.querySelector('.testimonial-quote');
+    if (testimonialQuote) testimonialQuote.textContent = t.testimonialQuote;
+    
+    const testimonialAuthor = document.querySelector('.testimonial-author');
+    if (testimonialAuthor) testimonialAuthor.textContent = t.testimonialAuthor;
+    
+    // Update PQRS section
+    const pqrsH2 = document.querySelector('.pqrs h2');
+    if (pqrsH2) pqrsH2.textContent = t.pqrsSectionTitle;
+    
+    const pqrsP = document.querySelector('.pqrs p');
+    if (pqrsP) pqrsP.textContent = t.pqrsSubtitle;
+    
+    const pqrsBtn = document.querySelector('.pqrs .btn');
+    if (pqrsBtn) {
+        pqrsBtn.textContent = t.pqrsButton;
+        // Update the onclick alert text
+        pqrsBtn.setAttribute('onclick', `alert('${t.pqrsAlert}')`);
+    }
+    
+    // Update footer section
+    const footerSections = document.querySelectorAll('.footer-section');
+    if (footerSections.length >= 3) {
+        // Contact section
+        const contactH3 = footerSections[0].querySelector('h3');
+        if (contactH3) contactH3.textContent = t.footerContacto;
+        
+        const footerPs = footerSections[0].querySelectorAll('p');
+        if (footerPs.length >= 3) {
+            footerPs[0].textContent = t.footerDireccion;
+            footerPs[1].textContent = t.footerWhatsApp;
+            footerPs[2].textContent = t.footerEmail;
+        }
+        
+        // Social section
+        const socialH3 = footerSections[1].querySelector('h3');
+        if (socialH3) socialH3.textContent = t.footerSiguenos;
+        
+        // Legal section
+        const legalH3 = footerSections[2].querySelector('h3');
+        if (legalH3) legalH3.textContent = t.footerLegal;
+        
+        const legalLinks = footerSections[2].querySelectorAll('a');
+        if (legalLinks.length >= 3) {
+            legalLinks[0].textContent = t.footerPoliticaPrivacidad;
+            legalLinks[1].textContent = t.footerTerminos;
+            legalLinks[2].textContent = t.footerAvisoLegal;
+        }
+    }
+    
+    // Update footer copyright
+    const footerBottom = document.querySelector('.footer-bottom p');
+    if (footerBottom) footerBottom.textContent = t.footerCopyright;
+    
+    // Update language toggle
+    const currentLang = document.getElementById('currentLang');
+    const altLang = document.getElementById('altLang');
+    if (currentLang) currentLang.textContent = currentLanguage.toUpperCase();
+    if (altLang) altLang.textContent = currentLanguage === 'es' ? 'EN' : 'ES';
+    
+    // Update form submission message
+    updateFormSubmissionHandler(t);
+}
+
+// Update form submission handler with translations
+function updateFormSubmissionHandler(t) {
+    const form = document.getElementById('contactForm');
+    if (form) {
+        // Remove existing event listeners by cloning the node
+        const newForm = form.cloneNode(true);
+        form.parentNode.replaceChild(newForm, form);
+        
+        // Add new event listener with translated message
+        newForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Show translated success message
+            alert(t.formSuccessMessage);
+            
+            // Reset form
+            this.reset();
+            
+            // In a real implementation, you would send this data to your backend
+            console.log('Form data:', data);
+        });
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('whatsappModal');
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    
+    if (modal && whatsappFloat && !modal.contains(e.target) && !whatsappFloat.contains(e.target)) {
+        closeWhatsAppModal();
+    }
+});
+
+// Initialize language toggle style
+document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.querySelector('.lang-toggle');
+    if (langToggle) {
+        langToggle.style.cursor = 'pointer';
+        langToggle.style.userSelect = 'none';
+    }
+});
+    </script>
+</body>
+</html>
