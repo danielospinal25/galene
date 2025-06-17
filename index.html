@@ -666,11 +666,10 @@ document.addEventListener('keydown', function(e) {
 const translations = {
     es: {
         // Header
-        inicio: "Inicio",
-        servicios: "Servicios",
-        especialidades: "Especialidades",
-        doctor: "Dr. Peñaranda",
-        contacto: "Contacto",
+        inicio: "INICIO",
+        servicios: "SERVICIOS",
+        doctor: "DR.PEÑARANDA",
+        contacto: "CONTACTO",
         agendarCita: "Agendar Cita",
         
         // Hero
@@ -781,11 +780,10 @@ const translations = {
     },
     en: {
         // Header
-        inicio: "Home",
-        servicios: "Services",
-        especialidades: "Specialties",
-        doctor: "Dr. Peñaranda",
-        contacto: "Contact",
+        inicio: "HOME",
+        servicios: "SERVICES",
+        doctor: "DR.PEÑARANDA",
+        contacto: "CONTACT",
         agendarCita: "Book Appointment",
         
         // Hero
@@ -922,12 +920,11 @@ function updateLanguage() {
     
     // Update navigation
     const navLinks = document.querySelectorAll('.nav-link');
-    if (navLinks.length >= 5) {
+    if (navLinks.length >= 4) {
         navLinks[0].textContent = t.inicio;
         navLinks[1].textContent = t.servicios;
-        navLinks[2].textContent = t.especialidades;
-        navLinks[3].textContent = t.doctor;
-        navLinks[4].textContent = t.contacto;
+        navLinks[2].textContent = t.doctor;
+        navLinks[3].textContent = t.contacto;
     }
     
     // Update header button
