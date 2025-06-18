@@ -11,32 +11,94 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="img/logo1.png" alt="GALENE MEDSKIN INSTITUTE" class="logo-img">
-                </div>
-                <nav class="nav-menu">
-                    <a href="index.html" class="nav-link">Inicio</a>
-                    <a href="servicios.html" class="nav-link active">Servicios</a>
-                    <a href="#especialidades" class="nav-link">Especialidades</a>
-                    <a href="#doctor" class="nav-link">Dr. Peñaranda</a>
-                    <a href="#contacto" class="nav-link">Contacto</a>
-                </nav>
-                <div class="header-actions">
-                    <div class="lang-toggle" onclick="toggleLanguage()">
-                        <span id="currentLang">ES</span> | <span id="altLang">EN</span>
-                    </div>
-                    <a href="https://wa.me/573001234567" class="btn-header">
-                        <i class="fab fa-whatsapp"></i>
-                        Agendar Cita
-                    </a>
+     
+  
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+    <img src="img/logo1.png" alt="GALENE MEDSKIN INSTITUTE" class="logo-img">
+    
+</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">INICIO</a>
+                <a href="servicios.html" class="nav-link">SERVICIOS</a>
+                <a href="web.html" class="nav-link">DR.PEÑARANDA</a>
+                <a href="cont.html" class="nav-link">CONTACTO</a>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-toggle" onclick="toggleLanguage()">
+    <span id="currentLang">ES</span> | <span id="altLang">EN</span>
+</div>
+                <a href="https://wa.me/573001234567" class="btn-header">Agendar Cita</a>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="banner">
+    <div class="banner-content">
+        <img src="img/banner.png" alt="GALENE MEDSKIN INSTITUTE" class="banner-image">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="banner-text">
+                    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE" class="banner-logo">
+                    <p>Excelencia en dermatología y medicina estética</p>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</section>
+ <section class="search-container">
+        <div class="container">
+            <!-- Caja de búsqueda -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Buscar tratamiento o servicio..." id="searchInput">
+                <span class="search-icon">🔍</span>
+            </div>
 
+            <!-- Categorías de servicios -->
+            <div class="service-categories" id="serviceCategories">
+                <!-- Dermatología Médica -->
+                <a href="#consulta-general" class="service-tag" data-service="consulta dermatológica general">Consulta Dermatológica</a>
+                <a href="#acne" class="service-tag" data-service="tratamiento de acné">Tratamiento de Acné</a>
+                <a href="#dermatoscopia" class="service-tag" data-service="dermatoscopia digital">Dermatoscopia Digital</a>
+                <a href="#psoriasis" class="service-tag" data-service="tratamiento de psoriasis">Psoriasis</a>
+                <a href="#dermatitis" class="service-tag" data-service="dermatitis eccemas">Dermatitis y Eccemas</a>
+                
+                <!-- Dermatología Estética -->
+                <a href="#botox" class="service-tag" data-service="toxina botulínica botox">Toxina Botulínica</a>
+                <a href="#acido-hialuronico" class="service-tag" data-service="rellenos ácido hialurónico">Ácido Hialurónico</a>
+                <a href="#peeling" class="service-tag" data-service="peeling químico">Peeling Químico</a>
+                <a href="#microagujas" class="service-tag" data-service="microagujas radiofrecuencia">Microagujas RF</a>
+                <a href="#mesoterapia" class="service-tag" data-service="mesoterapia facial">Mesoterapia Facial</a>
+                
+                <!-- Tratamientos Corporales -->
+                <a href="#criolipolisis" class="service-tag" data-service="criolipólisis grasa">Criolipólisis</a>
+                <a href="#radiofrecuencia-corporal" class="service-tag" data-service="radiofrecuencia corporal">RF Corporal</a>
+                <a href="#celulitis" class="service-tag" data-service="tratamiento celulitis">Celulitis</a>
+                <a href="#escleroterapia" class="service-tag" data-service="escleroterapia várices">Escleroterapia</a>
+                
+                <!-- Depilación Láser -->
+                <a href="#depilacion-facial" class="service-tag" data-service="depilación facial láser">Depilación Facial</a>
+                <a href="#depilacion-axilas" class="service-tag" data-service="depilación axilas">Depilación Axilas</a>
+                <a href="#depilacion-piernas" class="service-tag" data-service="depilación piernas">Depilación Piernas</a>
+                <a href="#depilacion-intima" class="service-tag" data-service="depilación zona íntima">Depilación Íntima</a>
+                
+                <!-- Servicios adicionales -->
+                <a href="#rejuvenecimiento" class="service-tag" data-service="rejuvenecimiento facial">Rejuvenecimiento</a>
+                <a href="#manchas" class="service-tag" data-service="manchas melasma">Tratamiento Manchas</a>
+                <a href="#cicatrices" class="service-tag" data-service="cicatrices acné">Cicatrices</a>
+                <a href="#rosácea" class="service-tag" data-service="rosácea">Rosácea</a>
+                <a href="#antiedad" class="service-tag" data-service="anti edad arrugas">Anti-edad</a>
+                <a href="#hidratacion" class="service-tag" data-service="hidratación facial">Hidratación</a>
+            </div>
+
+            <!-- Mensaje de no resultados -->
+            <div class="no-results" id="noResults">
+                No se encontraron servicios que coincidan con tu búsqueda
+            </div>
+        </div>
+    </section>
     <!-- Hero Section with Animated Background -->
     <section class="hero-services">
         <div class="hero-background">
@@ -48,33 +110,6 @@
                 <div class="shape shape-5"></div>
             </div>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">Nuestros</span>
-                    <span class="title-line gradient-text">Servicios</span>
-                </h1>
-                <p class="hero-description">
-                    Tratamientos dermatológicos y estéticos de alta calidad con 
-                    <span class="highlight">tecnología de vanguardia</span> y atención personalizada
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Pacientes Satisfechos</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Años de Experiencia</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Tratamientos Disponibles</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Services Categories -->
     <section class="services-categories">
@@ -419,58 +454,360 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta-section">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="cta-content">
-                <div class="cta-text">
-                    <h2>¿Listo para transformar tu piel?</h2>
-                    <p>Agenda tu consulta personalizada y descubre el tratamiento perfecto para ti</p>
-                    <div class="cta-features">
-                        <div class="feature">
-                            <i class="fas fa-calendar-check"></i>
-                            <span>Consulta Gratuita</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-user-md"></i>
-                            <span>Atención Especializada</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-award"></i>
-                            <span>Resultados Garantizados</span>
-                        </div>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Dirección: [Dirección de la clínica]</p>
+                    <p>📱 WhatsApp: +57 300 123 4567</p>
+                    <p>📧 Email: info@galenemedskin.com</p>
                 </div>
-                <div class="cta-actions">
-                    <a href="https://wa.me/573001234567" class="btn-primary">
-                        <i class="fab fa-whatsapp"></i>
-                        Agendar Consulta
-                    </a>
-                    <a href="#contacto" class="btn-secondary">
-                        <i class="fas fa-info-circle"></i>
-                        Más Información
-                    </a>
+               <div class="footer-section">
+    <h3>Síguenos</h3>
+    <div class="social-links">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="img/youtube.png" alt="YouTube" class="social-icon"></a>
+        <a href="#"><img src="img/x.png" alt="X (Twitter)" class="social-icon"></a>
+    </div>
+</div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Aviso Legal</a>
                 </div>
             </div>
+            <div class="footer-bottom">
+               <div class="footer-logo" style="margin-bottom: 20px; text-align: center;">
+    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE" style="height: 60px; width: auto;">
+</div>
+                <p>&copy; 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.</p>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script>
-// Diccionario de traducciones actualizado
+// Funcionalidad del buscador corregida
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const serviceCategories = document.getElementById('serviceCategories');
+    const noResults = document.getElementById('noResults');
+    
+    // Obtener todos los servicios de las tarjetas de categorías
+    const allServices = document.querySelectorAll('.service-item');
+    const categoryCards = document.querySelectorAll('.category-card');
+    
+    // Crear un array con información de cada servicio para búsqueda
+    const servicesData = [];
+    
+    allServices.forEach((service, index) => {
+        const serviceName = service.querySelector('.service-name')?.textContent.toLowerCase() || '';
+        const serviceDescription = service.querySelector('.service-description')?.textContent.toLowerCase() || '';
+        const categoryCard = service.closest('.category-card');
+        const categoryTitle = categoryCard?.querySelector('h3')?.textContent.toLowerCase() || '';
+        
+        servicesData.push({
+            element: service,
+            categoryCard: categoryCard,
+            name: serviceName,
+            description: serviceDescription,
+            category: categoryTitle,
+            searchText: `${serviceName} ${serviceDescription} ${categoryTitle}`
+        });
+    });
+
+    // Función para filtrar servicios
+    function filterServices(searchTerm) {
+        const term = searchTerm.toLowerCase().trim();
+        let visibleServicesCount = 0;
+        let visibleCategories = new Set();
+
+        if (term === '') {
+            // Mostrar todos los servicios y categorías
+            allServices.forEach(service => {
+                service.style.display = 'block';
+            });
+            categoryCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            noResults.style.display = 'none';
+            return;
+        }
+
+        // Filtrar servicios
+        servicesData.forEach(serviceData => {
+            const matches = serviceData.searchText.includes(term) || 
+                           serviceData.name.includes(term) ||
+                           serviceData.description.includes(term) ||
+                           serviceData.category.includes(term);
+
+            if (matches) {
+                serviceData.element.style.display = 'block';
+                visibleCategories.add(serviceData.categoryCard);
+                visibleServicesCount++;
+            } else {
+                serviceData.element.style.display = 'none';
+            }
+        });
+
+        // Mostrar/ocultar categorías basado en servicios visibles
+        categoryCards.forEach(card => {
+            if (visibleCategories.has(card)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Mostrar/ocultar mensaje de no resultados
+        if (visibleServicesCount === 0) {
+            noResults.style.display = 'block';
+            const noResultsTranslations = {
+                es: {
+                    title: 'No se encontraron resultados',
+                    subtitle: 'Intenta con otros términos como "botox", "acné", "láser" o "rejuvenecimiento"'
+                },
+                en: {
+                    title: 'No results found',
+                    subtitle: 'Try other terms like "botox", "acne", "laser" or "rejuvenation"'
+                }
+            };
+            
+            const currentTranslation = noResultsTranslations[currentLanguage];
+            noResults.innerHTML = `
+                <div style="text-align: center; padding: 2rem;">
+                    <i class="fas fa-search" style="font-size: 3rem; color: #ccc; margin-bottom: 1rem;"></i>
+                    <h3 style="color: #666; margin-bottom: 0.5rem;">${currentTranslation.title}</h3>
+                    <p style="color: #999;">${currentTranslation.subtitle}</p>
+                </div>
+            `;
+        } else {
+            noResults.style.display = 'none';
+        }
+    }
+
+    // Event listener para el input de búsqueda
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            filterServices(this.value);
+        });
+
+        // Búsqueda con Enter
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const term = this.value.toLowerCase().trim();
+                if (term) {
+                    // Buscar el primer servicio visible y hacer scroll hacia él
+                    const firstVisibleService = document.querySelector('.service-item[style*="block"], .service-item:not([style*="none"])');
+                    if (firstVisibleService) {
+                        firstVisibleService.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'center' 
+                        });
+                        
+                        // Añadir efecto de highlight temporal
+                        firstVisibleService.style.backgroundColor = '#f0f8ff';
+                        firstVisibleService.style.transition = 'background-color 0.3s ease';
+                        
+                        setTimeout(() => {
+                            firstVisibleService.style.backgroundColor = '';
+                        }, 2000);
+                    }
+                }
+            }
+        });
+
+        // Limpiar búsqueda con Escape
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                this.value = '';
+                filterServices('');
+            }
+        });
+
+        // Actualizar placeholder según el idioma
+        function updateSearchPlaceholder() {
+            const placeholders = {
+                es: [
+                    'Buscar tratamiento o servicio...',
+                    'Ej: botox, acné, depilación...',
+                    'Ej: rejuvenecimiento, manchas...',
+                    'Ej: psoriasis, dermatitis...'
+                ],
+                en: [
+                    'Search treatment or service...',
+                    'E.g: botox, acne, hair removal...',
+                    'E.g: rejuvenation, spots...',
+                    'E.g: psoriasis, dermatitis...'
+                ]
+            };
+            
+            let placeholderIndex = 0;
+            const currentPlaceholders = placeholders[currentLanguage];
+            
+            searchInput.placeholder = currentPlaceholders[0];
+            
+            if (window.placeholderInterval) {
+                clearInterval(window.placeholderInterval);
+            }
+            
+            window.placeholderInterval = setInterval(() => {
+                if (!searchInput.matches(':focus')) {
+                    searchInput.placeholder = currentPlaceholders[placeholderIndex];
+                    placeholderIndex = (placeholderIndex + 1) % currentPlaceholders.length;
+                }
+            }, 3000);
+        }
+        
+        updateSearchPlaceholder();
+        
+        // Actualizar placeholder cuando cambie el idioma
+        window.updateSearchPlaceholder = updateSearchPlaceholder;
+    }
+
+    // Mejorar la funcionalidad de los tags del buscador (si existen)
+    const serviceTags = document.querySelectorAll('.service-tag');
+    if (serviceTags.length > 0) {
+        serviceTags.forEach(tag => {
+            tag.addEventListener('click', function(e) {
+                e.preventDefault();
+                const searchTerm = this.getAttribute('data-service') || this.textContent;
+                if (searchInput) {
+                    searchInput.value = searchTerm;
+                    filterServices(searchTerm);
+                }
+                
+                // Scroll suave hacia los resultados
+                const firstResult = document.querySelector('.category-card[style*="block"], .category-card:not([style*="none"])');
+                if (firstResult) {
+                    firstResult.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }
+            });
+
+            // Efectos hover
+            tag.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+            });
+            
+            tag.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '';
+            });
+        });
+    }
+
+    // Funcionalidad adicional: búsqueda por categoría
+    const categoryHeaders = document.querySelectorAll('.category-card h3');
+    categoryHeaders.forEach(header => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', function() {
+            const categoryName = this.textContent;
+            if (searchInput) {
+                searchInput.value = categoryName;
+                filterServices(categoryName);
+            }
+        });
+    });
+
+    console.log('Buscador de servicios inicializado correctamente');
+    console.log(`${allServices.length} servicios encontrados en ${categoryCards.length} categorías`);
+});
+
+// Función auxiliar para destacar texto en los resultados
+function highlightSearchTerm(text, term) {
+    if (!term) return text;
+    
+    const regex = new RegExp(`(${term})`, 'gi');
+    return text.replace(regex, '<mark style="background-color: #ffeb3b; padding: 2px 4px; border-radius: 3px;">$1</mark>');
+}
+
+// Función para añadir sugerencias de búsqueda populares
+function addSearchSuggestions() {
+    const suggestions = {
+        es: [
+            'botox', 'toxina botulínica', 'acné', 'tratamiento acné',
+            'depilación láser', 'ácido hialurónico', 'peeling',
+            'rejuvenecimiento', 'manchas', 'melasma', 'psoriasis',
+            'dermatitis', 'criolipólisis', 'celulitis', 'várices',
+            'microagujas', 'radiofrecuencia', 'mesoterapia'
+        ],
+        en: [
+            'botox', 'botulinum toxin', 'acne', 'acne treatment',
+            'laser hair removal', 'hyaluronic acid', 'peeling',
+            'rejuvenation', 'spots', 'melasma', 'psoriasis',
+            'dermatitis', 'cryolipolysis', 'cellulite', 'varicose veins',
+            'microneedling', 'radiofrequency', 'mesotherapy'
+        ]
+    };
+    
+    return suggestions[currentLanguage] || suggestions.es;
+}
+
+// Función para estadísticas de búsqueda (opcional)
+function trackSearchStats(searchTerm) {
+    // Aquí podrías implementar analytics de búsqueda
+    console.log(`Búsqueda realizada: "${searchTerm}"`);
+}
+
+// Diccionario de traducciones completamente ampliado
 const translations = {
     es: {
         // Header
-        'Home': 'Inicio',
-        'Services': 'Servicios',
-        'Specialties': 'Especialidades',
-        'Dr. Peñaranda': 'Dr. Peñaranda',
-        'Contact': 'Contacto',
+        'HOME': 'INICIO',
+        'SERVICES': 'SERVICIOS',
+        'DR.PEÑARANDA': 'DR.PEÑARANDA',
+        'CONTACT': 'CONTACTO',
         'Book Appointment': 'Agendar Cita',
-        'Inicio': 'Inicio',
-        'Servicios': 'Servicios',
-        'Especialidades': 'Especialidades',
-        'Contacto': 'Contacto',
+        'INICIO': 'INICIO',
+        'SERVICIOS': 'SERVICIOS',
+        'CONTACTO': 'CONTACTO',
         'Agendar Cita': 'Agendar Cita',
+        
+        // Banner
+        'Excelencia en dermatología y medicina estética': 'Excelencia en dermatología y medicina estética',
+        'Excellence in dermatology and aesthetic medicine': 'Excelencia en dermatología y medicina estética',
+        
+        // Motor de búsqueda
+        'Search treatment or service...': 'Buscar tratamiento o servicio...',
+        'Buscar tratamiento o servicio...': 'Buscar tratamiento o servicio...',
+        'No results found': 'No se encontraron resultados',
+        'No se encontraron resultados': 'No se encontraron resultados',
+        'Try other terms like "botox", "acne", "laser" or "rejuvenation"': 'Intenta con otros términos como "botox", "acné", "láser" o "rejuvenecimiento"',
+        'Intenta con otros términos como "botox", "acné", "láser" o "rejuvenecimiento"': 'Intenta con otros términos como "botox", "acné", "láser" o "rejuvenecimiento"',
+        
+        // Tags de búsqueda
+        'Dermatological Consultation': 'Consulta Dermatológica',
+        'Acne Treatment': 'Tratamiento de Acné',
+        'Digital Dermatoscopy': 'Dermatoscopia Digital',
+        'Psoriasis': 'Psoriasis',
+        'Dermatitis and Eczema': 'Dermatitis y Eccemas',
+        'Botulinum Toxin': 'Toxina Botulínica',
+        'Hyaluronic Acid': 'Ácido Hialurónico',
+        'Chemical Peel': 'Peeling Químico',
+        'Microneedling RF': 'Microagujas RF',
+        'Facial Mesotherapy': 'Mesoterapia Facial',
+        'Cryolipolysis': 'Criolipólisis',
+        'Body RF': 'RF Corporal',
+        'Cellulite': 'Celulitis',
+        'Sclerotherapy': 'Escleroterapia',
+        'Facial Hair Removal': 'Depilación Facial',
+        'Underarm Hair Removal': 'Depilación Axilas',
+        'Leg Hair Removal': 'Depilación Piernas',
+        'Intimate Hair Removal': 'Depilación Íntima',
+        'Rejuvenation': 'Rejuvenecimiento',
+        'Spot Treatment': 'Tratamiento Manchas',
+        'Scars': 'Cicatrices',
+        'Rosacea': 'Rosácea',
+        'Anti-aging': 'Anti-edad',
+        'Hydration': 'Hidratación',
         
         // Hero Section
         'Our Services': 'Nuestros Servicios',
@@ -483,7 +820,69 @@ const translations = {
         
         // Categorías
         'Service Categories': 'Categorías de Servicios',
+        'Categories of': 'Categorías de',
         'We offer a wide range of specialized treatments for comprehensive skin care': 'Ofrecemos una amplia gama de tratamientos especializados para el cuidado integral de tu piel',
+        
+        // Dermatología Médica
+        'Medical Dermatology': 'Dermatología Médica',
+        'Diagnosis and treatment of skin diseases': 'Diagnóstico y tratamiento de enfermedades de la piel',
+        'General Dermatological Consultation': 'Consulta Dermatológica General',
+        'Complete evaluation of your skin health, pathology diagnosis and personalized treatment plan.': 'Evaluación completa de la salud de tu piel, diagnóstico de patologías y plan de tratamiento personalizado.',
+        'Specialized treatments for juvenile and adult acne, including topical and systemic therapies.': 'Tratamientos especializados para acné juvenil y adulto, incluyendo terapias tópicas y sistémicas.',
+        'Digital Dermatoscopy': 'Dermatoscopia Digital',
+        'Advanced analysis of moles and skin lesions with body mapping technology.': 'Análisis avanzado de lunares y lesiones cutáneas con tecnología de mapeo corporal.',
+        'Psoriasis Treatment': 'Tratamiento de Psoriasis',
+        'Comprehensive psoriasis management with biological treatments and conventional therapies.': 'Manejo integral de psoriasis con tratamientos biológicos y terapias convencionales.',
+        'Dermatitis and Eczema': 'Dermatitis y Eccemas',
+        'Diagnosis and treatment of atopic dermatitis, contact dermatitis and other types of eczema.': 'Diagnóstico y tratamiento de dermatitis atópica, de contacto y otros tipos de eccemas.',
+        
+        // Dermatología Estética
+        'Aesthetic Dermatology': 'Dermatología Estética',
+        'Treatments to improve the appearance and health of your skin': 'Tratamientos para mejorar la apariencia y salud de tu piel',
+        'Treatment of expression wrinkles on forehead, between eyebrows and crow\'s feet.': 'Tratamiento de arrugas de expresión en frente, entrecejo y patas de gallo.',
+        'Hyaluronic Acid Fillers': 'Rellenos con Ácido Hialurónico',
+        'Volume enhancement and wrinkle correction with high-quality hyaluronic acid.': 'Aumento de volumen y corrección de arrugas con ácido hialurónico de alta calidad.',
+        'Skin renewal with superficial, medium and deep peels as needed.': 'Renovación cutánea con peelings superficiales, medios y profundos según necesidad.',
+        'Microneedling with Radiofrequency': 'Microagujas con Radiofrecuencia',
+        'Facial rejuvenation with microneedling and radiofrequency technology.': 'Rejuvenecimiento facial con tecnología de microagujas y radiofrecuencia.',
+        'Deep hydration and facial revitalization with vitamins and nutrients.': 'Hidratación profunda y revitalización facial con vitaminas y nutrientes.',
+        
+        // Tratamientos Corporales
+        'Body Treatments': 'Tratamientos Corporales',
+        'Procedures to improve body appearance': 'Procedimientos para mejorar la apariencia corporal',
+        'Localized fat elimination through controlled cold technology.': 'Eliminación de grasa localizada mediante tecnología de frío controlado.',
+        'Body Radiofrequency': 'Radiofrecuencia Corporal',
+        'Skin firming and sagging reduction in different body areas.': 'Reafirmación de la piel y reducción de flacidez en diferentes áreas del cuerpo.',
+        'Cellulite Treatment': 'Tratamiento de Celulitis',
+        'Comprehensive protocol to reduce cellulite appearance and improve skin texture.': 'Protocolo integral para reducir la apariencia de la celulitis y mejorar la textura de la piel.',
+        'Treatment of varicose veins and spider veins with minimally invasive techniques.': 'Tratamiento de várices y arañitas vasculares con técnicas mínimamente invasivas.',
+        
+        // Depilación Láser
+        'Laser Hair Removal': 'Depilación Láser',
+        'Permanent removal of unwanted hair': 'Eliminación permanente del vello no deseado',
+        'Facial hair removal with latest generation laser, safe for all skin types.': 'Eliminación de vello facial con láser de última generación, seguro para todos los tipos de piel.',
+        'Quick and effective treatment to remove underarm hair.': 'Tratamiento rápido y efectivo para eliminar el vello de las axilas.',
+        'Full Leg Hair Removal': 'Depilación Piernas Completas',
+        'Full leg laser hair removal with advanced technology and long-lasting results.': 'Depilación láser de piernas completas con tecnología avanzada y resultados duraderos.',
+        'Intimate Area Hair Removal': 'Depilación Zona Íntima',
+        'Delicate and professional treatment for intimate area with maximum comfort.': 'Tratamiento delicado y profesional para la zona íntima con máximo confort.',
+        
+        // Footer
+        'Contact': 'Contacto',
+        'Contacto': 'Contacto',
+        'Address: [Clinic Address]': 'Dirección: [Dirección de la clínica]',
+        '📍 Dirección: [Dirección de la clínica]': '📍 Dirección: [Dirección de la clínica]',
+        'WhatsApp: +57 300 123 4567': 'WhatsApp: +57 300 123 4567',
+        '📱 WhatsApp: +57 300 123 4567': '📱 WhatsApp: +57 300 123 4567',
+        'Email: info@galenemedskin.com': 'Email: info@galenemedskin.com',
+        '📧 Email: info@galenemedskin.com': '📧 Email: info@galenemedskin.com',
+        'Follow Us': 'Síguenos',
+        'Síguenos': 'Síguenos',
+        'Legal': 'Legal',
+        'Privacy Policy': 'Política de Privacidad',
+        'Terms and Conditions': 'Términos y Condiciones',
+        'Legal Notice': 'Aviso Legal',
+        '© 2025 GALENE MEDSKIN INSTITUTE. All rights reserved.': '© 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.',
         
         // CTA Section
         'Ready to transform your skin?': '¿Listo para transformar tu piel?',
@@ -496,12 +895,49 @@ const translations = {
     },
     en: {
         // Header
-        'Inicio': 'Home',
-        'Servicios': 'Services',
-        'Especialidades': 'Specialties',
-        'Dr. Peñaranda': 'Dr. Peñaranda',
-        'Contacto': 'Contact',
+        'INICIO': 'HOME',
+        'SERVICIOS': 'SERVICES',
+        'DR.PEÑARANDA': 'DR.PEÑARANDA',
+        'CONTACTO': 'CONTACT',
         'Agendar Cita': 'Book Appointment',
+        
+        // Banner
+        'Excelencia en dermatología y medicina estética': 'Excellence in dermatology and aesthetic medicine',
+        'Excellence in dermatology and aesthetic medicine': 'Excellence in dermatology and aesthetic medicine',
+        
+        // Motor de búsqueda
+        'Buscar tratamiento o servicio...': 'Search treatment or service...',
+        'Search treatment or service...': 'Search treatment or service...',
+        'No se encontraron resultados': 'No results found',
+        'No results found': 'No results found',
+        'Intenta con otros términos como "botox", "acné", "láser" o "rejuvenecimiento"': 'Try other terms like "botox", "acne", "laser" or "rejuvenation"',
+        'Try other terms like "botox", "acne", "laser" or "rejuvenation"': 'Try other terms like "botox", "acne", "laser" or "rejuvenation"',
+        
+        // Tags de búsqueda
+        'Consulta Dermatológica': 'Dermatological Consultation',
+        'Tratamiento de Acné': 'Acne Treatment',
+        'Dermatoscopia Digital': 'Digital Dermatoscopy',
+        'Psoriasis': 'Psoriasis',
+        'Dermatitis y Eccemas': 'Dermatitis and Eczema',
+        'Toxina Botulínica': 'Botulinum Toxin',
+        'Ácido Hialurónico': 'Hyaluronic Acid',
+        'Peeling Químico': 'Chemical Peel',
+        'Microagujas RF': 'Microneedling RF',
+        'Mesoterapia Facial': 'Facial Mesotherapy',
+        'Criolipólisis': 'Cryolipolysis',
+        'RF Corporal': 'Body RF',
+        'Celulitis': 'Cellulite',
+        'Escleroterapia': 'Sclerotherapy',
+        'Depilación Facial': 'Facial Hair Removal',
+        'Depilación Axilas': 'Underarm Hair Removal',
+        'Depilación Piernas': 'Leg Hair Removal',
+        'Depilación Íntima': 'Intimate Hair Removal',
+        'Rejuvenecimiento': 'Rejuvenation',
+        'Tratamiento Manchas': 'Spot Treatment',
+        'Cicatrices': 'Scars',
+        'Rosácea': 'Rosacea',
+        'Anti-edad': 'Anti-aging',
+        'Hidratación': 'Hydration',
         
         // Hero Section
         'Nuestros': 'Our',
@@ -513,6 +949,7 @@ const translations = {
         
         // Categorías
         'Categorías de Servicios': 'Service Categories',
+        'Categorías de': 'Categories of',
         'Ofrecemos una amplia gama de tratamientos especializados para el cuidado integral de tu piel': 'We offer a wide range of specialized treatments for comprehensive skin care',
         
         // Dermatología Médica
@@ -563,11 +1000,23 @@ const translations = {
         'Depilación Axilas': 'Underarm Hair Removal',
         'Tratamiento rápido y efectivo para eliminar el vello de las axilas.': 'Quick and effective treatment to remove underarm hair.',
         'Depilación Piernas Completas': 'Full Leg Hair Removal',
-        'Depilación láser de piernas completas con tecnología avanzada y resultados duraderos.': 'Full leg laser hair removal with advanced technology and long-lasting results.',
+ 'Depilación láser de piernas completas con tecnología avanzada y resultados duraderos.': 'Full leg laser hair removal with advanced technology and long-lasting results.',
         'Depilación Zona Íntima': 'Intimate Area Hair Removal',
         'Tratamiento delicado y profesional para la zona íntima con máximo confort.': 'Delicate and professional treatment for intimate area with maximum comfort.',
         
-        // CTA Section
+        // Footer
+        'Contacto': 'Contact',
+        '📍 Dirección: [Dirección de la clínica]': '📍 Address: [Clinic Address]',
+        '📱 WhatsApp: +57 300 123 4567': '📱 WhatsApp: +57 300 123 4567',
+        '📧 Email: info@galenemedskin.com': '📧 Email: info@galenemedskin.com',
+        'Síguenos': 'Follow Us',
+        'Legal': 'Legal',
+        'Política de Privacidad': 'Privacy Policy',
+        'Términos y Condiciones': 'Terms and Conditions',
+        'Aviso Legal': 'Legal Notice',
+        '© 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.': '© 2025 GALENE MEDSKIN INSTITUTE. All rights reserved.',
+        
+        // CTA Section (si existe)
         '¿Listo para transformar tu piel?': 'Ready to transform your skin?',
         'Agenda tu consulta personalizada y descubre el tratamiento perfecto para ti': 'Schedule your personalized consultation and discover the perfect treatment for you',
         'Consulta Gratuita': 'Free Consultation',
@@ -581,76 +1030,183 @@ const translations = {
 // Variable para el idioma actual
 let currentLanguage = 'es';
 
-// Función para traducir el contenido
-function translateContent(language) {
-    const elements = document.querySelectorAll('h1, h2, h3, p, .nav-link, .btn-header, .service-name, .service-description, .breadcrumb-link, .title-line, .hero-description, .stat-label, .section-title, .section-description, .btn-primary, .btn-secondary, .cta-text h2, .cta-text p, .feature span');
+// Función para alternar idioma
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+    updateLanguage();
+    updateLanguageToggle();
+    if (window.updateSearchPlaceholder) {
+        window.updateSearchPlaceholder();
+    }
+}
+
+// Función para actualizar el toggle de idioma
+function updateLanguageToggle() {
+    const currentLangElement = document.getElementById('currentLang');
+    const altLangElement = document.getElementById('altLang');
+    
+    if (currentLangElement && altLangElement) {
+        if (currentLanguage === 'es') {
+            currentLangElement.textContent = 'ES';
+            altLangElement.textContent = 'EN';
+        } else {
+            currentLangElement.textContent = 'EN';
+            altLangElement.textContent = 'ES';
+        }
+    }
+}
+
+// Función principal para actualizar el idioma
+function updateLanguage() {
+    const elements = document.querySelectorAll('[data-translate]');
     
     elements.forEach(element => {
-        const originalText = element.textContent.trim();
-        
-        if (translations[language] && translations[language][originalText]) {
-            element.textContent = translations[language][originalText];
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+            element.textContent = translations[currentLanguage][key];
         }
     });
     
-    // Actualizar el título de la página
-    if (language === 'en') {
-        document.title = 'Services - GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda';
-    } else {
-        document.title = 'Servicios - GALENE MEDSKIN INSTITUTE - Dr. Camilo Peñaranda';
+    // Actualizar elementos sin data-translate pero con texto específico
+    updateTextContent();
+    
+    // Actualizar placeholders
+    updatePlaceholders();
+    
+    // Actualizar atributos alt de imágenes si es necesario
+    updateImageAlts();
+    
+    console.log(`Idioma actualizado a: ${currentLanguage}`);
+}
+
+// Función para actualizar contenido de texto específico
+// Función para actualizar contenido de texto específico
+function updateTextContent() {
+    const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, div, a, button');
+    
+    textElements.forEach(element => {
+        // Excluir elementos que contienen imágenes
+        if (element.querySelector('img')) {
+            return;
+        }
+        
+        // Excluir elementos con clases específicas de redes sociales
+        if (element.classList.contains('social-links') || 
+            element.closest('.social-links') || 
+            element.classList.contains('social-icon')) {
+            return;
+        }
+        
+        // Excluir elementos que solo contienen iconos de Font Awesome
+        if (element.querySelector('i.fab, i.fas, i.far, i.fal')) {
+            const textWithoutIcons = element.textContent.replace(/[\s\n\r]/g, '');
+            if (textWithoutIcons.length === 0) {
+                return;
+            }
+        }
+        
+        const originalText = element.textContent.trim();
+        
+        if (originalText && translations[currentLanguage] && translations[currentLanguage][originalText]) {
+            element.textContent = translations[currentLanguage][originalText];
+        }
+    });
+}
+
+// Función para actualizar placeholders
+function updatePlaceholders() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        const placeholderKey = currentLanguage === 'es' ? 
+            'Buscar tratamiento o servicio...' : 
+            'Search treatment or service...';
+        searchInput.placeholder = placeholderKey;
     }
 }
 
-// Función para alternar idioma
-function toggleLanguage() {
-    // Cambiar al idioma opuesto
-    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
-    
-    // Actualizar los indicadores de idioma
-    const currentLangElement = document.getElementById('currentLang');
-    const altLangElement = document.getElementById('altLang');
-    
-    if (currentLanguage === 'en') {
-        currentLangElement.textContent = 'EN';
-        altLangElement.textContent = 'ES';
-    } else {
-        currentLangElement.textContent = 'ES';
-        altLangElement.textContent = 'EN';
+// Función para actualizar atributos alt de imágenes
+function updateImageAlts() {
+    const images = document.querySelectorAll('img[alt]');
+    images.forEach(img => {
+        const altText = img.getAttribute('alt');
+        if (translations[currentLanguage] && translations[currentLanguage][altText]) {
+            img.setAttribute('alt', translations[currentLanguage][altText]);
+        }
+    });
+}
+
+// Función para traducir elementos dinámicos (como resultados de búsqueda)
+function translateDynamicContent(element) {
+    const textContent = element.textContent.trim();
+    if (translations[currentLanguage] && translations[currentLanguage][textContent]) {
+        element.textContent = translations[currentLanguage][textContent];
     }
-    
-    // Traducir el contenido
-    translateContent(currentLanguage);
-    
-    // Guardar preferencia en localStorage
-    localStorage.setItem('preferredLanguage', currentLanguage);
 }
 
-// Función para detectar el idioma del navegador
-function detectBrowserLanguage() {
-    const browserLang = navigator.language || navigator.userLanguage;
-    return browserLang.startsWith('en') ? 'en' : 'es';
-}
-
-// Inicializar cuando se carga la página
+// Inicializar traducciones cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
-    // Cargar idioma guardado o detectar idioma del navegador
-    const savedLanguage = localStorage.getItem('preferredLanguage');
-    currentLanguage = savedLanguage || detectBrowserLanguage();
+    // Agregar atributos data-translate a elementos existentes
+    addTranslationAttributes();
     
-    // Actualizar los indicadores de idioma
-    const currentLangElement = document.getElementById('currentLang');
-    const altLangElement = document.getElementById('altLang');
+    // Configurar el idioma inicial
+    updateLanguageToggle();
     
-    if (currentLanguage === 'en') {
-        currentLangElement.textContent = 'EN';
-        altLangElement.textContent = 'ES';
-        translateContent('en');
-    } else {
-        currentLangElement.textContent = 'ES';
-        altLangElement.textContent = 'EN';
-        // No es necesario traducir si ya está en español por defecto
-    }
+    console.log('Sistema de traducciones inicializado correctamente');
 });
+
+// Función para agregar atributos de traducción automáticamente
+function addTranslationAttributes() {
+    // Mapeo de selectores y sus claves de traducción
+    const elementMappings = [
+        // Header
+        { selector: '.nav-link[href="index.html"]', key: 'HOME' },
+        { selector: '.nav-link[href="servicios.html"]', key: 'SERVICES' },
+        { selector: '.nav-link[href="#doctor"]', key: 'DR_PENARANDA' },
+        { selector: '.nav-link[href="#contacto"]', key: 'CONTACT' },
+        { selector: '.btn-header', key: 'Book Appointment' },
+        
+        // Secciones principales
+        { selector: '.section-title .title-accent', key: 'Categories of' },
+        { selector: '.section-title .gradient-text', key: 'Services' },
+        { selector: '.section-description', key: 'We offer a wide range of specialized treatments for comprehensive skin care' },
+        
+        // Categorías
+        { selector: '.medical-card h3', key: 'Medical Dermatology' },
+        { selector: '.aesthetic-card h3', key: 'Aesthetic Dermatology' },
+        { selector: '.body-card h3', key: 'Body Treatments' },
+        { selector: '.laser-card h3', key: 'Laser Hair Removal' },
+        
+        // Footer
+        { selector: '.footer-section h3', key: 'Contact' }
+    ];
+    
+    elementMappings.forEach(mapping => {
+        const element = document.querySelector(mapping.selector);
+        if (element && !element.hasAttribute('data-translate')) {
+            element.setAttribute('data-translate', mapping.key);
+        }
+    });
+}
+
+// Función para obtener texto traducido
+function getTranslatedText(key, language = currentLanguage) {
+    return translations[language] && translations[language][key] ? translations[language][key] : key;
+}
+
+// Función para traducir texto dinámicamente
+function translateText(text, language = currentLanguage) {
+    return translations[language] && translations[language][text] ? translations[language][text] : text;
+}
+
+// Exportar funciones para uso global
+window.toggleLanguage = toggleLanguage;
+window.updateLanguage = updateLanguage;
+window.translateText = translateText;
+window.getTranslatedText = getTranslatedText;
+window.currentLanguage = currentLanguage;
+
+console.log('Sistema de traducciones cargado completamente');l
+       
     </script>
 </body>
 </html>
