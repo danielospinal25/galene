@@ -284,15 +284,13 @@
                 </div>
                 <nav class="nav-menu">
                     <a href="index.html" class="nav-link">INICIO</a>
-                    <a href="servicios.html" class="nav-link">SERVICIOS</a>
-                    <a href="web.html" class="nav-link">DR.PEÑARANDA</a>
-                    <a href="#" class="nav-link active">CONTACTO</a>
+                    <a href="#" class="nav-link active">PAGINA WEB</a>
                 </nav>
                 <div class="header-actions">
                     <div class="lang-toggle" onclick="toggleLanguage()">
                         <span id="currentLang">ES</span> | <span id="altLang">EN</span>
                     </div>
-                    <a href="https://wa.me/573001234567" class="btn-header">Agendar Cita</a>
+                    <a href="https://wa.me/573001234567" class="btn-header">AGENDAR CITA</a>
                 </div>
             </div>
         </div>
@@ -331,19 +329,19 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contacto</h3>
-                    <p>📍 Dirección: [Dirección de la clínica]</p>
-                    <p>📱 WhatsApp: +57 300 123 4567</p>
-                    <p>📧 Email: info@galenemedskin.com</p>
+                    <p>📍 calle 96 # 10- 54 consultorio 502</p>
+                    <p>📱 +57 317 331 0427</p>
+                    <p>📧 galenemedskininstitute@gmail.com</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Síguenos</h3>
-                    <div class="social-links">
-                        <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
-                        <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
-                        <a href="#"><img src="img/youtube.png" alt="YouTube" class="social-icon"></a>
-                        <a href="#"><img src="img/x.png" alt="X (Twitter)" class="social-icon"></a>
-                    </div>
-                </div>
+               <div class="footer-section">
+    <h3>Síguenos</h3>
+    <div class="social-links">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a>
+        <a href="#"><img src="img/youtube.png" alt="YouTube" class="social-icon"></a>
+        <a href="#"><img src="img/x.png" alt="X (Twitter)" class="social-icon"></a>
+    </div>
+</div>
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <a href="#">Política de Privacidad</a>
@@ -352,9 +350,9 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-logo">
-                    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE">
-                </div>
+               <div class="footer-logo" style="margin-bottom: 20px; text-align: center;">
+    <img src="img/logo3.png" alt="GALENE MEDSKIN INSTITUTE" style="height: 60px; width: auto;">
+</div>
                 <p>&copy; 2025 GALENE MEDSKIN INSTITUTE. Todos los derechos reservados.</p>
             </div>
         </div>
@@ -367,10 +365,8 @@
         const translations = {
             es: {
                 inicio: "INICIO",
-                servicios: "SERVICIOS",
-                doctor: "DR.PEÑARANDA",
-                contacto: "CONTACTO",
-                agendarCita: "Agendar Cita",
+                contacto: "PAGINA WEB",
+                agendarCita: "AGENDAR CITA",
                 slogan: "Excelencia en dermatología y medicina estética",
                 visitMessage: "Estamos preparando una experiencia digital completamente nueva para ti. Mientras tanto, visítanos en nuestra página oficial para conocer todos nuestros servicios, el perfil del Dr. Camilo Peñaranda y agendar tu cita personalizada.",
                 ctaButton: "🌐 Visitar Página Principal",
@@ -387,10 +383,8 @@
             },
             en: {
                 inicio: "HOME",
-                servicios: "SERVICES",
-                doctor: "DR.PEÑARANDA",
-                contacto: "CONTACT",
-                agendarCita: "Book Appointment",
+                contacto: "WEBSITE",
+                agendarCita: "BOOK APPOINTMENT",
                 slogan: "Excellence in dermatology and aesthetic medicine",
                 visitMessage: "We are preparing a completely new digital experience for you. Meanwhile, visit our official page to learn about all our services, Dr. Camilo Peñaranda's profile and schedule your personalized appointment.",
                 ctaButton: "🌐 Visit Main Page",
@@ -417,11 +411,9 @@
             
             // Update navigation
             const navLinks = document.querySelectorAll('.nav-link');
-            if (navLinks.length >= 4) {
+            if (navLinks.length >= 2) {
                 navLinks[0].textContent = t.inicio;
-                navLinks[1].textContent = t.servicios;
-                navLinks[2].textContent = t.doctor;
-                navLinks[3].textContent = t.contacto;
+                navLinks[1].textContent = t.contacto;
             }
             
             // Update header button
