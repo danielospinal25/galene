@@ -10,8 +10,8 @@ body {
     line-height: 1.6;
     color: #191919;
     background: linear-gradient(135deg, #F9F0E5 0%, #E3E3E4 100%);
-    font-weight: 300; /* Cambiar de normal a 300 */
-    letter-spacing: 0.3px; /* Agregar espaciado */
+    font-weight: 200; /* Cambiar de 300 a 200 */
+    letter-spacing: 0.8px; /* Cambiar de 0.3px a 0.8px */
 }
 
 .container {
@@ -51,9 +51,9 @@ body {
 
 .logo-text {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200; /* Cambiar de 300 a 200 */
     color: #191919;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px; /* Cambiar de 1.5px a 2px */
 }
 
 .header-actions {
@@ -79,8 +79,8 @@ body {
     color: #6F6F6E;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    font-weight: 200; /* Cambiar de 400 a 200 */
+    letter-spacing: 0.8px; /* Cambiar de 0.5px a 0.8px */
     transition: all 0.3s ease;
     position: relative;
     padding: 8px 0;
@@ -115,9 +115,9 @@ body {
     border-radius: 25px;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300; /* Cambiar de 500 a 300 */
     transition: all 0.3s ease;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px; /* Cambiar de 0.5px a 0.8px */
 }
 
 .btn-header:hover {
@@ -128,21 +128,22 @@ body {
 
 
 /* WhatsApp Float Button */
+/* WhatsApp Float Button */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #25D366;
+    background: #191919;
     color: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 4px 20px rgba(25, 25, 25, 0.4);
     z-index: 1001;
     font-size: 24px;
     text-decoration: none;
     transition: all 0.3s ease;
-    animation: pulse 2s infinite;
+    animation: pulseBlack 2s infinite;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,13 +151,13 @@ body {
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+    background: #333333;
+    box-shadow: 0 6px 25px rgba(25, 25, 25, 0.6);
 }
-
-@keyframes pulse {
-    0% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-    50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7); }
-    100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+@keyframes pulseBlack {
+    0% { box-shadow: 0 4px 20px rgba(25, 25, 25, 0.4); }
+    50% { box-shadow: 0 4px 20px rgba(25, 25, 25, 0.7); }
+    100% { box-shadow: 0 4px 20px rgba(25, 25, 25, 0.4); }
 }
 
 /* WhatsApp Modal */
@@ -181,7 +182,7 @@ body {
 }
 
 .modal-header {
-    background: #25D366;
+    background: #191919;
     color: white;
     padding: 20px;
     border-radius: 20px 20px 0 0;
@@ -271,12 +272,12 @@ body {
 }
 
 .modal-btn-primary {
-    background: #25D366;
+    background: #191919;
     color: white;
 }
 
 .modal-btn-primary:hover {
-    background: #20BA5A;
+    background: #333333;
     transform: translateY(-1px);
 }
 
@@ -328,18 +329,17 @@ body {
 
 /* Tipografía mejorada con mejor contraste para el fondo cálido */
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 200; /* Cambiar de 400 a 200 */
+    font-size: 3.0rem; /* Reducido de 1.2rem a 1.0rem */
+    font-weight: 100;
     margin-bottom: 20px;
     line-height: 1.2;
     color: #2C1810;
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
-    letter-spacing: 0.5px; /* Cambiar de -0.02em a 0.5px */
+    letter-spacing: 2.5px;
 }
-
 .hero h2 {
-    font-size: 1.4rem;
-    font-weight: 200; /* Cambiar de 300 a 200 */
+    font-size: 1.1rem; /* Reducido de 1.3rem a 1.1rem */
+    font-weight: 100;
     margin-bottom: 40px;
     color: #5D4037;
     max-width: 800px;
@@ -347,9 +347,8 @@ body {
     margin-right: auto;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
     line-height: 1.6;
-    letter-spacing: 0.3px; /* Agregar espaciado */
+    letter-spacing: 1.5px;
 }
-
 /* Botones mejorados con paleta que complementa el fondo */
 .hero-buttons {
     display: flex;
@@ -357,32 +356,31 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .btn {
     padding: 16px 32px;
     border: none;
     border-radius: 50px;
-    font-size: 16px;
-    font-weight: 300; /* Cambiar de 500 a 300 */
+    font-size: 14px; /* Reducido de 16px a 14px */
+    font-weight: 200;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     display: inline-block;
     min-width: 200px;
-    letter-spacing: 0.5px; /* Cambiar de 0.01em a 0.5px */
+    letter-spacing: 0.8px;
 }
 
 
 .btn-primary {
-    background: linear-gradient(135deg, #8D6E63 0%, #6D4C41 100%);
+    background: linear-gradient(135deg, #191919 0%, #333 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(141, 110, 99, 0.2);
+    box-shadow: 0 4px 15px rgba(25, 25, 25, 0.3);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #7D5E53 0%, #5D4C41 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(141, 110, 99, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 25, 25, 0.4);
+    background: linear-gradient(135deg, #333 0%, #555 100%);
 }
 
 .btn-secondary {
@@ -475,20 +473,7 @@ body {
 }
 
 /* Para pantallas grandes - escalado mejorado */
-@media (min-width: 1400px) {
-    .hero h1 {
-        font-size: 4rem;
-    }
-    
-    .hero h2 {
-        font-size: 1.6rem;
-    }
-    
-    .btn {
-        padding: 18px 36px;
-        font-size: 17px;
-    }
-}
+
 
 /* Mejoras adicionales para accesibilidad y UX */
 @media (prefers-reduced-motion: reduce) {
@@ -1774,24 +1759,9 @@ body {
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    color: #1a202c;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-}
 
-.hero-content h2 {
-    font-size: 1.3rem;
-    color: #4a5568;
-    margin-bottom: 2.5rem;
-    font-weight: 400;
-    line-height: 1.5;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 .hero-buttons {
     display: flex;
@@ -1811,16 +1781,6 @@ body {
     min-width: 200px;
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    color: white;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
-}
 
 .btn-secondary {
     background: transparent;
@@ -1850,13 +1810,7 @@ body {
         font-size: 1.2rem;
     }
     
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-content h2 {
-        font-size: 1.1rem;
-    }
+   
     
     .hero-buttons {
         flex-direction: column;
@@ -1883,5 +1837,725 @@ body {
         font-size: 1.1rem;
     }
 }
-
+.banner-logo {
+    filter: brightness(0) invert(1);
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
 /* Si prefieres mantener los colores originales del logo, elimina la línea del filter */
+
+/* Transiciones suaves entre secciones */
+
+/* Scroll suave para toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transición base para todas las secciones */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Cuando las secciones están visibles */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Transiciones específicas para diferentes secciones */
+
+/* Hero Section */
+.hero {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-out;
+}
+
+/* Banner Section */
+.banner {
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.banner.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Services Section */
+.services {
+    transition: all 0.8s ease-out 0.2s;
+}
+
+.services.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación individual para las tarjetas de servicios */
+.service-card {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Retraso escalonado para las tarjetas */
+.service-card:nth-child(1) { transition-delay: 0.1s; }
+.service-card:nth-child(2) { transition-delay: 0.2s; }
+.service-card:nth-child(3) { transition-delay: 0.3s; }
+.service-card:nth-child(4) { transition-delay: 0.4s; }
+
+/* Testimonials Section */
+.testimonials {
+    transition: all 0.8s ease-out 0.15s;
+}
+
+.testimonials.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación para testimonios individuales */
+.testimonial-card {
+    opacity: 0;
+    transform: translateX(-50px) rotateY(10deg);
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+}
+
+.testimonial-card:nth-child(even) {
+    transform: translateX(50px) rotateY(-10deg);
+}
+
+.testimonial-card:nth-child(even).visible {
+    transform: translateX(0) rotateY(0deg);
+}
+
+/* Contact Form Section */
+.contact-form {
+    transition: all 0.9s ease-out 0.1s;
+}
+
+.contact-form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación para el formulario */
+.form-container {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+}
+
+.form-container.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* PQRS Section */
+.pqrs {
+    transition: all 0.7s ease-out 0.2s;
+}
+
+.pqrs.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+.footer {
+    transition: all 0.8s ease-out 0.25s;
+}
+
+.footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación para elementos del footer */
+.footer-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footer-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-section:nth-child(1) { transition-delay: 0.1s; }
+.footer-section:nth-child(2) { transition-delay: 0.2s; }
+.footer-section:nth-child(3) { transition-delay: 0.3s; }
+.footer-section:nth-child(4) { transition-delay: 0.4s; }
+
+/* Transiciones para elementos de navegación */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(25, 25, 25, 0.1),
+        transparent
+    );
+    transition: left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+/* Efecto parallax suave para secciones específicas */
+@media (prefers-reduced-motion: no-preference) {
+    .banner,
+    .hero {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+}
+
+/* Transiciones respetando las preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    section,
+    .service-card,
+    .testimonial-card,
+    .form-container,
+    .footer-section {
+        transition: opacity 0.3s ease;
+        transform: none !important;
+    }
+    
+    section.visible,
+    .service-card.visible,
+    .testimonial-card.visible,
+    .form-container.visible,
+    .footer-section.visible {
+        opacity: 1;
+    }
+}
+
+/* Optimización de rendimiento */
+section,
+.service-card,
+.testimonial-card,
+.form-container {
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Fade in desde diferentes direcciones */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-left.visible,
+.fade-in-right.visible,
+.fade-in-up.visible,
+.fade-in-down.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/*////////////////////////////////////////////
+        /* Estilos base para mejorar espaciado y simetría */
+        .section {
+            position: relative;
+            padding: 120px 0;
+            margin: 0;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Container para el toggle */
+        .toggle-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(25, 25, 25, 0.1);
+        }
+
+        /* Botón de toggle */
+        .toggle-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            z-index: 100;
+            background: rgba(25, 25, 25, 0.9);
+            color: #F9F0E5;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(227, 227, 228, 0.2);
+        }
+
+        .toggle-btn:hover {
+            background: rgba(25, 25, 25, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(25, 25, 25, 0.3);
+        }
+
+        .philosophy .toggle-btn {
+            background: rgba(249, 240, 229, 0.9);
+            color: #191919;
+        }
+
+        .philosophy .toggle-btn:hover {
+            background: rgba(249, 240, 229, 1);
+        }
+
+        /* Secciones con animación */
+        .section {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .section.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Doctor Profile Section - Mejorado con simetría perfecta */
+        .doctor-profile {
+            background: linear-gradient(135deg, #ffffff 0%, #F9F0E5 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 140px 0;
+        }
+
+        .doctor-profile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #E3E3E4 50%, transparent 100%);
+            opacity: 0.6;
+        }
+
+        .doctor-profile::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #E3E3E4 50%, transparent 100%);
+            opacity: 0.6;
+        }
+
+        /* Container mejorado para simetría perfecta */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .profile-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 120px;
+            align-items: flex-start;
+            position: relative;
+            z-index: 2;
+            min-height: 600px;
+        }
+
+        /* Columna izquierda - Título e imagen */
+        .profile-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-header {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .profile-header h2 {
+            font-size: 3.5rem;
+            font-weight: 200;
+            color: #191919;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .profile-subtitle {
+            font-size: 1.4rem;
+            color: #6F6F6E;
+            margin-bottom: 0;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+            text-transform: uppercase;
+        }
+
+        .profile-image {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 
+                0 25px 50px rgba(25, 25, 25, 0.1),
+                0 10px 25px rgba(25, 25, 25, 0.05),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+            transform: translateY(0) scale(1);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform;
+            width: 100%;
+            aspect-ratio: 4/5;
+            max-width: 500px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Columna derecha - Contenido textual */
+        .profile-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 60px;
+        }
+
+        .profile-text {
+            font-size: 1.1rem;
+            color: #191919;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: default;
+            text-align: justify;
+        }
+
+        .profile-text:last-of-type {
+            margin-bottom: 50px;
+        }
+
+        .achievements {
+    margin-top: 40px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(227, 227, 228, 0.4);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid rgba(227, 227, 228, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: rgba(249, 240, 229, 0.1);
+}
+
+
+
+.achievement-item:hover {
+    transform: translateY(-2px);
+    background: rgba(249, 240, 229, 0.3);
+    box-shadow: 0 8px 20px rgba(25, 25, 25, 0.1);
+}
+
+.achievement-icon {
+    width: 8px;
+    height: 8px;
+    background: #191919;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.achievement-text {
+    font-size: 1rem;
+    color: #191919;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+        /* Philosophy Section - Mejorada con simetría */
+        .philosophy {
+            background: linear-gradient(135deg, #191919 0%, #2a2a2a 100%);
+            color: #F9F0E5;
+            position: relative;
+            overflow: hidden;
+            padding: 140px 0;
+        }
+
+        .philosophy::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #6F6F6E 50%, transparent 100%);
+            opacity: 0.6;
+        }
+
+        .philosophy-content {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            padding: 40px 0;
+        }
+
+        .philosophy-header {
+            margin-bottom: 80px;
+        }
+
+        .philosophy-title {
+            font-size: 3rem;
+            font-weight: 200;
+            color: #F9F0E5;
+            margin-bottom: 30px;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .philosophy-quote {
+            position: relative;
+            padding: 80px 60px;
+            background: rgba(249, 240, 229, 0.08);
+            border-radius: 30px;
+            border: 1px solid rgba(227, 227, 228, 0.15);
+            backdrop-filter: blur(20px);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #F9F0E5;
+            margin: 0;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        /* Espaciado mejorado para elementos flotantes */
+        .floating-element {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(227, 227, 228, 0.08) 0%, rgba(227, 227, 228, 0.02) 40%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 12s ease-in-out infinite;
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .floating-element.top {
+            top: 10%;
+            right: 5%;
+            animation-delay: -2s;
+        }
+
+        .floating-element.bottom {
+            bottom: 10%;
+            left: 5%;
+            animation-delay: -6s;
+            animation-duration: 14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Responsive mejorado para mantener simetría */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 40px;
+            }
+            
+            .section {
+                padding: 100px 0;
+            }
+            
+            .doctor-profile,
+            .philosophy {
+                padding: 120px 0;
+            }
+            
+            .profile-content {
+                grid-template-columns: 1fr;
+                gap: 80px;
+                text-align: center;
+            }
+            
+            .profile-left {
+                order: 1;
+            }
+            
+            .profile-right {
+                order: 2;
+                padding-top: 0;
+            }
+            
+            .profile-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .profile-header h2 {
+                font-size: 3rem;
+            }
+            
+            .profile-text {
+                text-align: center;
+            }
+            
+            .toggle-btn {
+                top: 20px;
+                right: 20px;
+                padding: 12px 20px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 80px 0;
+            }
+            
+            .doctor-profile,
+            .philosophy {
+                padding: 100px 0;
+            }
+            
+            .container {
+                padding: 0 30px;
+            }
+            
+            .profile-content {
+                gap: 60px;
+            }
+            
+            .profile-right {
+                padding-top: 0;
+            }
+            
+            .profile-header h2 {
+                font-size: 2.5rem;
+            }
+            
+            .philosophy-title {
+                font-size: 2.5rem;
+            }
+            
+            .philosophy-content {
+                padding: 20px 0;
+            }
+            
+            .philosophy-quote {
+                padding: 50px 30px;
+                margin: 30px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            .doctor-profile,
+            .philosophy {
+                padding: 80px 0;
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+            
+            .profile-header h2 {
+                font-size: 2rem;
+            }
+            
+            .philosophy-title {
+                font-size: 2rem;
+            }
+            
+            .toggle-btn {
+                padding: 10px 15px;
+                font-size: 0.7rem;
+                top: 15px;
+                right: 15px;
+            }
+        }
