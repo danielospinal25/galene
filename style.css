@@ -530,11 +530,34 @@ body {
 }
 
 .service-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 20px auto;
     display: block;
+    transition: transform 0.3s ease;
 }
 
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+}
 .service-card h3 {
     font-size: 1.4rem;
     font-weight: 400;
